@@ -46,4 +46,5 @@ void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de,
 void server_run(struct server *p);
 void server_cmd(struct server *p);
 void exit_handle(int sig);
+void server_destroy(struct server *p);
 #endif
