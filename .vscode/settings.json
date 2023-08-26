@@ -1,0 +1,25 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "fcntl.h": "c",
+        "log.h": "c",
+        "acceptor.h": "c",
+        "ioctl.h": "c",
+        "conn.h": "c",
+        "vector": "c",
+        "epoller.h": "c",
+        "pthread.h": "c",
+        "unistd.h": "c",
+        "stdlib.h": "c",
+        "cerrno": "c",
+        "dealer.h": "c",
+        "inet.h": "c",
+        "in.h": "c",
+        "thread_pool.h": "c",
+        "conner.h": "c"
+    }
+}

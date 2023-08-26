@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>用户登录</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="login">
+        <h2>用户登录</h2>
+        <div class="login_box">
+            <!-- required就是不能为空  必须在css效果中有很大的作用 -->
+
+            <input type="text" name='name' id='name' required />
+            <label for="name">用户名</label>
+        </div>
+        <div class="login_box">
+
+            <input type="password" name='pwd' id='pwd' required="required">
+            <label for="pwd">密码</label>
+        </div>
+        <a onclick="checkall();">
+            登录
+            <span>
+                <span>
+                    <span>
+                        <span>
+        </a>
+
+    </div>
+
+</body>
+
+<script>
+    function checkall() {
+        alert("start login")
+        var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
+        var account = document.getElementById('name').value;
+        var pass = document.getElementById('pwd').value;
+        httpRequest.open('POST', 'http://192.168.31.90:4321', true); //第二步：打开连接/***发送json格式文件必须设置请求头 ；如下 - */
+        httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头）var obj = { name: 'zhansgan', age: 18 };
+        var senddata = { name: account, pwd: pass };
+        var str = "name="+account+"&&"+"pwd="+pass+"\n";
+        httpRequest.send(str);//发送请求 将json写入send中
+        /**
+         * 获取数据后的处理程序
+         */
+        alert(str + "，登录成功！");
+    }
+</script>
+
+</html>
