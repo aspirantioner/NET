@@ -9,7 +9,6 @@
 #include "conner.h"
 #include "queue.h"
 #include "dealer.h"
-#include "logrever.h"
 #include "thread_pool.h"
 #include <pthread.h>
 #include <netinet/in.h>
@@ -32,17 +31,11 @@ typedef struct server
     /*dealer*/
     dealer *de;
 
-    /*logrever*/
-    log_rever *lo;
-
-    /*server logappender*/
-    logAppender *logappender;
-
-    /*server exit sig*/
-    int exit_sig;
+    /*log client*/
+    log_client log_cli;
 
 } server;
-void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de, log_rever *lo, logAppender *log_p, int exit_sig);
+void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de);
 void server_run(struct server *p);
 void server_cmd(struct server *p);
 void exit_handle(int sig);

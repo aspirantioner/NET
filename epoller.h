@@ -4,6 +4,8 @@
 #define EVENTS_SIZE 1025 // sys max filefd num +1
 
 #include "dealer.h"
+#include "logclient.h"
+#include "lio_thread.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <sys/epoll.h>
@@ -15,12 +17,11 @@
 typedef struct epoller
 {
     int epfd;
-    struct epoll_event events[EVENTS_SIZE];
-    pthread_t self_thread_id;
-    logAppender *logappender;
-    pthread_mutex_t epoll_mutex;
+    struct epoll_event *events_array;
+    struct lio_thread thread;
+    struct log_client log_cli;
 } epoller;
 
-void epoller_init(struct epoller *p, logAppender *log_p);
+void epoller_init(struct epoller *p);
 void *epoller_run(void *q);
 #endif

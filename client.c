@@ -9,7 +9,6 @@
 #include <sys/time.h>
 #include <string.h>
 #include <pthread.h>
-#include <pthread.h>
 
 pthread_mutex_t cli_mutex = PTHREAD_MUTEX_INITIALIZER;
 static int count = 1;
@@ -39,7 +38,11 @@ void *thread_fun(void *p)
     int str_num = strlen(ch);
     write(client_sockfd, ch, str_num);
     bzero(ch, str_num);
-    read(client_sockfd, ch, str_num);
+    int ret = read(client_sockfd, ch, str_num);
+    if (ret == -1 || ret == 0)
+    {
+        perror("read error");
+    }
     write(STDOUT_FILENO, ch, str_num);
     close(client_sockfd);
     pthread_mutex_lock(&cli_mutex);

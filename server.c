@@ -1,4 +1,5 @@
 #include "server.h"
+#include "lio_thread.h"
 #include <sys/ioctl.h>
 #include <sys/types.h>
 #include <fcntl.h>
@@ -21,21 +22,21 @@ void exit_handle(int sig)
 init server system
 bind ac,ep,co,de,lo and set server log,exit sig
 */
-void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de, log_rever *lo, logAppender *log_p, int exit_sig)
+void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de)
 {
 	char buf[1024]; // info char buffer
-
-	/*init server epoller*/
-	assert(ep != NULL);
-	srv->ep = ep;
-	sprintf(buf, "srv: epoller -epfd:%d init success!\n", srv->ep->epfd);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
 
 	/*init server acceptor*/
 	assert(ac != NULL);
 	srv->ac = ac;
 	sprintf(buf, "srv: acceptor bind -ip:%s -port:%hu init success!\n", srv->ac->server_ip, srv->ac->server_port);
+	write(STDOUT_FILENO, buf, strlen(buf));
+	bzero(buf, strlen(buf));
+
+	/*init server epoller*/
+	assert(ep != NULL);
+	srv->ep = ep;
+	sprintf(buf, "srv: epoller -epfd:%d init success!\n", srv->ep->epfd);
 	write(STDOUT_FILENO, buf, strlen(buf));
 	bzero(buf, strlen(buf));
 
@@ -48,36 +49,10 @@ void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de,
 	/*init server dealer*/
 	assert(de != NULL);
 	srv->de = de;
-	sprintf(buf, "srv: dealer -minnum:%d -maxnum:%d -exitnum:%d -queue capacity:%d -detect time:%d -tolerate time:%d init success!\n", de->dealer_thread_pool.work_thread_min_num, de->dealer_thread_pool.work_thread_max_num, de->dealer_thread_pool.work_thread_exit_num, de->dealer_thread_pool.queue->capacity, de->dealer_thread_pool.regulor_detect_time, de->dealer_thread_pool.regulor_tolerate_time);
+	sprintf(buf, "srv: dealer -minnum:%d -maxnum:%d -exitnum:%d -queue capacity:%d init success!\n", de->dealer_thread_pool_p->work_thread_min_num, de->dealer_thread_pool_p->work_thread_max_num, de->dealer_thread_pool_p->work_thread_exit_num, de->dealer_thread_pool_p->queue->capacity);
 	write(STDOUT_FILENO, buf, strlen(buf));
 	bzero(buf, strlen(buf));
 
-	/*init server logrever*/
-	assert(lo != NULL);
-	srv->lo = lo;
-	sprintf(buf, "srv: dealer -minnum:%d -maxnum:%d -exitnum:%d -queue capacity:%d -detect time:%d -tolerate time:%d init success!\n", lo->log_thread_pool.work_thread_min_num, lo->log_thread_pool.work_thread_max_num, lo->log_thread_pool.work_thread_exit_num, lo->log_thread_pool.queue->capacity, lo->log_thread_pool.regulor_detect_time, lo->log_thread_pool.regulor_tolerate_time);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
-
-	/*set exit sig*/
-	assert(exit_sig > 32);
-	srv->exit_sig = exit_sig;
-
-	/*set exit_sig handle for epoller and acceptor*/
-	struct sigaction act;
-	sigemptyset(&act.sa_mask);
-	act.sa_flags = 0;
-	act.sa_handler = exit_handle;
-	if (sigaction(srv->exit_sig, &act, NULL))
-	{
-		perror("sig register fail");
-	}
-	sprintf(buf, "srv: -exit sig:%d register successfully\n", srv->exit_sig);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
-
-	/*set logappender*/
-	srv->logappender = log_p;
 	write(STDOUT_FILENO, "server init successfully!\n", 27);
 	return;
 }
@@ -88,10 +63,12 @@ run server system
 */
 void server_run(struct server *p)
 {
-	thread_pool_run(&p->lo->log_thread_pool);					   // first start log pool thread
-	pthread_create(&p->ac->self_thread_id, NULL, accpetor_run, p); // start ac thread
-	pthread_create(&p->ep->self_thread_id, NULL, epoller_run, p);  // start ep thread
-	thread_pool_run(&p->de->dealer_thread_pool);				   // finnally start de threads
+
+	lio_thread_set(&p->ac->thread, accpetor_run, p);
+	lio_thread_set(&p->ep->thread, epoller_run, p);
+	lio_thread_run(&p->ac->thread);
+	lio_thread_run(&p->ep->thread);
+	thread_pool_run(p->de->dealer_thread_pool_p); // finnally start de threads
 	write(STDOUT_FILENO, "server start running!\n", 23);
 	return;
 }
@@ -101,32 +78,27 @@ all server system destroy
 */
 void server_destroy(struct server *p)
 {
-	struct work_unit *unit;
-	struct logInfo *loginfo;
-	struct logEvent *logevent;
-
 	char buf[1024] = {0};
 
 	/*close acceptor*/
-	pthread_kill(p->ac->self_thread_id, p->exit_sig);
-	pthread_join(p->ac->self_thread_id, NULL);
+	lio_thread_exit(&p->ac->thread);
+	pthread_join(p->ac->thread.thread_id, NULL);
 	int len = sprintf(buf, "acceptor has exit!\n");
 	write(STDOUT_FILENO, buf, strlen(buf));
 	close(p->ac->listen_socket);
 
-	if (p->ac->logappender)
+	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
-		loginfo = (struct logInfo *)malloc(sizeof(struct logInfo));
-		logevent = (struct logEvent *)malloc(sizeof(struct logEvent));
-		logtimeUpate(logevent);
-		logattrUpate(logevent, INFO, __FILE__, p->ac->self_thread_id, __LINE__, __FUNCTION__);
-		logevent->_log_str_len += sprintf(logevent->_log_str + logevent->_log_str_len, "%s", buf);
-		loginfo->logevent_p = logevent;
-		loginfo->logappender_p = p->ac->logappender;
-		unit = (struct work_unit *)malloc(sizeof(struct work_unit));
-		unit->work_data = loginfo;
-		unit->work_fun = logAppender_run;
-		send_work_func(&p->lo->log_thread_pool, unit);
+		logEventInit(&p->log_cli.log_pkt.log_event);
+		logtimeUpate(&p->log_cli.log_pkt.log_event);
+		logattrUpate(&p->log_cli.log_pkt.log_event, INFO, __FILE__, p->ac->thread.thread_id, __LINE__, __FUNCTION__);
+		p->log_cli.log_pkt.log_event._log_str_len += sprintf(p->log_cli.log_pkt.log_event._log_str + p->log_cli.log_pkt.log_event._log_str_len, "%s", buf);
+		log_client_write(&p->log_cli);
+	}
+	/*close acceptor log file*/
+	if (p->ac->log_cli.log_pkt.log_append.appendfd > 0)
+	{
+		log_client_close(&p->ac->log_cli);
 	}
 
 	/*close all client conn fd in conner*/
@@ -134,83 +106,60 @@ void server_destroy(struct server *p)
 	bzero(buf, len);
 	len = sprintf(buf, "conner has close all!\n");
 	write(STDOUT_FILENO, buf, len);
-	if (p->logappender)
+
+	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
-		loginfo = (struct logInfo *)malloc(sizeof(struct logInfo));
-		logevent = (struct logEvent *)malloc(sizeof(struct logEvent));
-		logtimeUpate(logevent);
-		logattrUpate(logevent, INFO, __FILE__, p->ep->self_thread_id, __LINE__, __FUNCTION__);
-		logevent->_log_str_len += sprintf(logevent->_log_str + logevent->_log_str_len, "%s", buf);
-		loginfo->logevent_p = logevent;
-		loginfo->logappender_p = p->logappender;
-		unit = (struct work_unit *)malloc(sizeof(struct work_unit));
-		unit->work_data = loginfo;
-		unit->work_fun = logAppender_run;
-		send_work_func(&p->lo->log_thread_pool, unit);
+		logEventInit(&p->log_cli.log_pkt.log_event);
+		logtimeUpate(&p->log_cli.log_pkt.log_event);
+		logattrUpate(&p->log_cli.log_pkt.log_event, INFO, __FILE__, p->ac->thread.thread_id, __LINE__, __FUNCTION__);
+		p->log_cli.log_pkt.log_event._log_str_len += sprintf(p->log_cli.log_pkt.log_event._log_str + p->log_cli.log_pkt.log_event._log_str_len, "%s", buf);
+		log_client_write(&p->log_cli);
 	}
 
 	/*close epoller*/
-	pthread_kill(p->ep->self_thread_id, p->exit_sig);
-	pthread_join(p->ep->self_thread_id, NULL);
+	lio_thread_exit(&p->ep->thread);
+	pthread_join(p->ep->thread.thread_id, NULL);
 	bzero(buf, len);
 	len = sprintf(buf, "epoller has exit!\n");
 	write(STDOUT_FILENO, buf, len);
-	close(p->ep->epfd); // close epoll fd
-	if (p->ep->logappender)
+	close(p->ep->epfd);		   // close epoll fd
+	free(p->ep->events_array); // free epoll event array
+	
+	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
-
-		loginfo = (struct logInfo *)malloc(sizeof(struct logInfo));
-		logevent = (struct logEvent *)malloc(sizeof(struct logEvent));
-		logtimeUpate(logevent);
-		logattrUpate(logevent, INFO, __FILE__, p->ep->self_thread_id, __LINE__, __FUNCTION__);
-		logevent->_log_str_len += sprintf(logevent->_log_str + logevent->_log_str_len, "%s", buf);
-		loginfo->logevent_p = logevent;
-		loginfo->logappender_p = p->ep->logappender;
-		unit = (struct work_unit *)malloc(sizeof(struct work_unit));
-		unit->work_data = loginfo;
-		unit->work_fun = logAppender_run;
-		send_work_func(&p->lo->log_thread_pool, unit);
+		logEventInit(&p->log_cli.log_pkt.log_event);
+		logtimeUpate(&p->log_cli.log_pkt.log_event);
+		logattrUpate(&p->log_cli.log_pkt.log_event, INFO, __FILE__, p->ac->thread.thread_id, __LINE__, __FUNCTION__);
+		p->log_cli.log_pkt.log_event._log_str_len += sprintf(p->log_cli.log_pkt.log_event._log_str + p->log_cli.log_pkt.log_event._log_str_len, "%s", buf);
+		log_client_write(&p->log_cli);
+	}
+	/*close epollor log file*/
+	if (p->ep->log_cli.log_pkt.log_append.appendfd > 0)
+	{
+		log_client_close(&p->ep->log_cli);
 	}
 
 	/*close dealer*/
-	thread_pool_destory(&p->de->dealer_thread_pool); // destroy dealer thread pool
+	thread_pool_destory(p->de->dealer_thread_pool_p); // destroy dealer thread pool
 	write(STDOUT_FILENO, "dealer thread pool has destory!\n", 33);
-	if (p->de->logappender)
+	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
-		loginfo = (struct logInfo *)malloc(sizeof(struct logInfo));
-		logevent = (struct logEvent *)malloc(sizeof(struct logEvent));
-		logtimeUpate(logevent);
-		logattrUpate(logevent, INFO, __FILE__, p->ep->self_thread_id, __LINE__, __FUNCTION__);
-		logevent->_log_str_len += sprintf(logevent->_log_str + logevent->_log_str_len, "dealer thread pool has destory!\n");
-		loginfo->logappender_p = p->de->logappender;
-		loginfo->logevent_p = logevent;
-		loginfo->logappender_p = p->logappender;
-		unit = (struct work_unit *)malloc(sizeof(struct work_unit));
-		unit->work_data = loginfo;
-		unit->work_fun = logAppender_run;
-		send_work_func(&p->lo->log_thread_pool, unit);
+		logEventInit(&p->log_cli.log_pkt.log_event);
+		logtimeUpate(&p->log_cli.log_pkt.log_event);
+		logattrUpate(&p->log_cli.log_pkt.log_event, INFO, __FILE__, p->ac->thread.thread_id, __LINE__, __FUNCTION__);
+		p->log_cli.log_pkt.log_event._log_str_len += sprintf(p->log_cli.log_pkt.log_event._log_str + p->log_cli.log_pkt.log_event._log_str_len, "dealer thread pool has destory!\n");
+		log_client_write(&p->log_cli);
+	}
+	/*close dealer log file*/
+	if (p->de->log_cli.log_pkt.log_append.appendfd > 0)
+	{
+		log_client_close(&p->de->log_cli);
 	}
 
-	/*close log thread pool*/
-	thread_pool_destory(&p->lo->log_thread_pool);
-	write(STDOUT_FILENO, "logger thread pool has destory!\n", 33);
-
-	/*close log appender fd*/
-	if (p->ac->logappender)
+	/*close server log file*/
+	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
-		close(p->ac->logappender->appendfd);
-	}
-	if (p->ep->logappender)
-	{
-		close(p->ep->logappender->appendfd);
-	}
-	if (p->de->logappender)
-	{
-		close(p->de->logappender->appendfd);
-	}
-	if (p->logappender)
-	{
-		close(p->logappender->appendfd);
+		log_client_close(&p->log_cli);
 	}
 }
 
@@ -222,9 +171,10 @@ void server_cmd(struct server *p)
 {
 	char cmd_buf[1024];
 	int len = 0;
+
+	sleep(2); // buff for new thread running
 	while (true)
 	{
-		sleep(3); // buff for new thread running
 		write(STDOUT_FILENO, "srv: ", strlen("srv: "));
 		read(STDIN_FILENO, cmd_buf, 1024);
 		// struct work_unit *unit;

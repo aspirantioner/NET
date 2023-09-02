@@ -3,16 +3,17 @@
 
 #include "thread_pool.h"
 #include "log.h"
+#include "logclient.h"
 
 typedef void *(deal_fun)(void *);
 
 typedef struct dealer
 {
-    struct thread_pool dealer_thread_pool;
-    logAppender *logappender;
+    struct thread_pool *dealer_thread_pool_p;
+    log_client log_cli;
     deal_fun *dealer_do_fun;
 } dealer;
 
-void dealer_init(dealer *p, logAppender *logappender, deal_fun *dealer_do_fun, int queue_capacity, int work_thread_min_num, int work_thread_max_num, int exit_sig, int detect_time, int tolerate_time);
+void dealer_init(dealer *p, struct thread_pool *dealer_thread_pool_p, deal_fun *dealer_func);
 void *dealer_run(void *p);
 #endif

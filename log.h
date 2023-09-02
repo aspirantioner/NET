@@ -10,8 +10,13 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/types.h>
+
 #define LOG_APPEND_INIT 200
 #define LOG_STR_LEN 1024
+#define FILE_MAX_LEN 255
+#define FUNC_NAME_MAX_LEN 100
+#define DATE_MAX_LEN 50
+#define TIME_MAX_LEN 50
 
 typedef enum loglevel
 {
@@ -23,12 +28,12 @@ typedef enum loglevel
 
 typedef struct logEvent
 {
-    char *date;             // event occur date year-month-day
-    char *time;             // event occur time
-    const char *file;       // run source file
-    int line;               // source file line
-    pthread_t threadid;     // run thread id
-    const char *_func_name; // run func name
+    char date[DATE_MAX_LEN];            // event occur date year-month-day
+    char time[TIME_MAX_LEN];            // event occur time
+    char file[FILE_MAX_LEN];            // run source file
+    int line;                           // source file line
+    pthread_t threadid;                 // run thread id
+    char _func_name[FUNC_NAME_MAX_LEN]; // run func name
     int _log_level;
     char _log_str[LOG_STR_LEN];
     int _log_str_len;
@@ -37,8 +42,8 @@ typedef struct logEvent
 // write log file file fd
 typedef struct logAppender
 {
-    int mode;               // w-r?
-    const char *appendfile; // log file name
+    int mode;                      // w-r?
+    char appendfile[FILE_MAX_LEN]; // log file name
     int appendfd;
 } logAppender;
 

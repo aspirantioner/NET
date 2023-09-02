@@ -18,7 +18,7 @@ typedef struct conn
 
 typedef struct conner
 {
-    struct conn conn_arry[MAX_CONN_NUM];
+    struct conn *conn_arry;
     int conn_num;
     pthread_mutex_t conn_mutex;
 } conner;

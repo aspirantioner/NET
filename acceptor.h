@@ -2,6 +2,8 @@
 #define _ACCEPTOR_H
 
 #include "log.h"
+#include "logclient.h"
+#include "lio_thread.h"
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
@@ -21,8 +23,8 @@ typedef struct acceptor
     struct sockaddr_in cli_addr;
     socklen_t len;
 
-    pthread_t self_thread_id;
-    logAppender* logappender;
+    struct lio_thread thread;
+    struct log_client log_cli;
 } acceptor;
 
 /*
@@ -33,7 +35,7 @@ server_port:bind server port
 list_queue_size: listen socket size
 log_p: acceptor log appender
 */
-void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char *server_ip, in_port_t server_port, unsigned int listen_queue_size,logAppender *log_p);
+void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char *server_ip, in_port_t server_port, unsigned int listen_queue_size);
 
 /*
 p:server sys pointer

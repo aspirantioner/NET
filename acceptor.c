@@ -8,7 +8,7 @@
 /*
 init acceptor with ip and port
 */
-void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char *server_ip, in_port_t server_port, unsigned int listen_queue_size, logAppender *log_p)
+void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char *server_ip, in_port_t server_port, unsigned int listen_queue_size)
 {
 
     /*init socket*/
@@ -28,9 +28,6 @@ void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char
     listen(ac->listen_socket, ac->listen_queue_size);
     ac->len = sizeof(ac->cli_addr);
     bzero(&ac->cli_addr, ac->len);
-
-    /*set logappender*/
-    ac->logappender = log_p;
 }
 
 void *accpetor_run(void *q)
@@ -38,53 +35,73 @@ void *accpetor_run(void *q)
 
     write(STDOUT_FILENO, "srv: acceptor running!\n", 24);
 
-    struct server *p = q;
-    p->ac->self_thread_id = pthread_self();
+    void **args = q;
+    struct lio_thread *lio_thread_p = args[0];
+    struct server *p = args[1];
+
+    sigset_t sigset;
+    sigemptyset(&sigset);
+    sigaddset(&sigset, LIO_THREAD_QUIT);
+
     while (true)
     {
+        sigprocmask(SIG_UNBLOCK, &sigset, NULL);
+        if (lio_thread_p->state == THREAD_QUIT)
+        {
+            return NULL;
+        }
+
         /*set clid nonblock when accpet*/
         int cli_fd = accept4(p->ac->listen_socket, &p->ac->cli_addr, &p->ac->len, SOCK_NONBLOCK);
 
-        if (cli_fd > 0)
+        if (lio_thread_p->state == THREAD_QUIT)
+        {
+            return NULL;
+        }
+        sigprocmask(SIG_BLOCK, &sigset, NULL);
+
+        if (cli_fd < 0)
+        {
+            perror("accept");
+            exit(0);
+        }
+
+        else if (cli_fd > 0)
         {
             /*add cli_fd in epoll*/
             struct epoll_event ev;
             ev.data.fd = cli_fd;
+
             char *cli_ip = inet_ntoa(p->ac->cli_addr.sin_addr);
+            in_port_t cli_port = ntohs(p->ac->cli_addr.sin_port);
+
             memcpy(p->co->conn_arry[cli_fd].cli_ip, cli_ip, strlen(cli_ip));
+
             pthread_mutex_lock(&p->co->conn_mutex);
-            p->co->conn_arry[cli_fd].cli_port = ntohs(p->ac->cli_addr.sin_port);
+            p->co->conn_arry[cli_fd].cli_port = cli_port;
             p->co->conn_arry[cli_fd].cli_fd = cli_fd;
             p->co->conn_arry[cli_fd].p = p;
             p->co->conn_num++;
             pthread_mutex_unlock(&p->co->conn_mutex);
+
             ev.data.ptr = p->co->conn_arry + cli_fd;
             ev.events = EPOLLIN | EPOLLET;
-            //pthread_mutex_lock(&p->ep->epoll_mutex);
+
             if (epoll_ctl(p->ep->epfd, EPOLL_CTL_ADD, cli_fd, &ev) == -1)
             {
                 perror("epoll_ctl!");
                 exit(0);
             };
-            //pthread_mutex_unlock(&p->ep->epoll_mutex);
 
-            if (!p->ac->logappender) // appender is null if not bind logappender
+            if (p->ac->log_cli.log_pkt.log_append.appendfd > 0) // appender file fd is valid if connect log server
             {
-                continue;
+                /*allocate log*/
+                logEventInit(&p->ac->log_cli.log_pkt.log_event);
+                logtimeUpate(&p->ac->log_cli.log_pkt.log_event);
+                logattrUpate(&p->ac->log_cli.log_pkt.log_event, INFO, __FILE__, lio_thread_p->thread_id, __LINE__, __FUNCTION__);
+                p->ac->log_cli.log_pkt.log_event._log_str_len += sprintf(p->ac->log_cli.log_pkt.log_event._log_str + p->ac->log_cli.log_pkt.log_event._log_str_len, "client %s:%hu has connected to server!\n", cli_ip, cli_port);
+                log_client_write(&p->ac->log_cli);
             }
-
-            /*allocate log*/
-            struct logInfo *loginfo = (struct logInfo *)malloc(sizeof(struct logInfo));
-            struct logEvent *logevent = (struct logEvent *)malloc(sizeof(struct logEvent));
-            logtimeUpate(logevent);
-            logattrUpate(logevent, INFO, __FILE__, p->ac->self_thread_id, __LINE__, __FUNCTION__);
-            logevent->_log_str_len += sprintf(logevent->_log_str + logevent->_log_str_len, "client %s:%hu has connect server!\n", inet_ntoa(p->ac->cli_addr.sin_addr), ntohs(p->ac->cli_addr.sin_port));
-            loginfo->logevent_p = logevent;
-            loginfo->logappender_p = p->ac->logappender;
-            struct work_unit *unit = (struct work_unit *)malloc(sizeof(struct work_unit));
-            unit->work_fun = logAppender_run;
-            unit->work_data = loginfo;
-            send_work_func(&p->lo->log_thread_pool, unit);
         }
     }
 

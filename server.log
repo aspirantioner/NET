@@ -1,2 +1,4 @@
-Aug 25 2023 11:55:20 server.c 151 server_cmd [INFO] 140021360776960 conner has close all!
-Aug 25 2023 11:55:20 server.c 192 server_cmd [INFO] 140021360776960 dealer thread pool has destory!
+Sep  2 2023 10:36:05 server.c 94 server_destroy [INFO] 139890960574208 acceptor has exit!
+Sep  2 2023 10:36:05 server.c 114 server_destroy [INFO] 139890960574208 conner has close all!
+Sep  2 2023 10:36:05 server.c 132 server_destroy [INFO] 139890960574208 epoller has exit!
+Sep  2 2023 10:36:05 server.c 149 server_destroy [INFO] 139890960574208 dealer thread pool has destory!

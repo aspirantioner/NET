@@ -2,6 +2,7 @@
 #define _THREAD_POOL
 
 #include "array_queue.h"
+#include "lio_thread.h"
 #include <pthread.h>
 #include <signal.h>
 #include <unistd.h>
@@ -20,13 +21,20 @@ typedef enum
     UNBIRTH,
 } STATUS;
 
-typedef struct worker_info
+typedef struct thread_worker
 {
     int worker_id;
-    pthread_t worker_thread_id;
     STATUS worker_status_state;
-    struct thread_pool *p;
-} worker_info;
+    struct lio_thread thread;
+    struct thread_pool* pool_p;
+} thread_worker;
+
+typedef struct thread_regulor{
+	struct lio_thread thread;
+	int regulor_detect_time;
+    int regulor_tolerate_time;
+    struct thread_pool* pool_p;
+} thread_regulor;
 
 typedef struct thread_pool
 {
@@ -37,19 +45,14 @@ typedef struct thread_pool
     int work_thread_empty_num;
     int work_thread_busy_num;
 
-    worker_info *work_state_arry;
-    pthread_t thread_regulor_id;
-
+    thread_worker *thread_worker_arry;
+   
     struct array_queue *queue;
     pthread_mutex_t queue_mutex;
     pthread_cond_t queue_full_cond;
     pthread_cond_t queue_empty_cond;
-
-    int exit_sig;
-    bool thread_pool_shutdown;
-
-    int regulor_detect_time;
-    int regulor_tolerate_time;
+	
+	thread_regulor* regulor_p;
 
 } thread_pool;
 
@@ -61,7 +64,9 @@ typedef struct work_unit
 } work_unit;
 
 void send_work_func(thread_pool *pool, void *send_elem);
-void thread_pool_init(thread_pool *pool, int queue_capacity, int work_thread_min_num, int work_thread_max_num, int exit_sig, int detect_time, int tolerate_time);
+void thread_pool_init(thread_pool *pool, int queue_capacity, int work_thread_min_num, int work_thread_max_num);
+void thread_regulor_init(struct thread_regulor* regulor_p,int regulor_detect_time,int regulor_tolerate_time);
+void thread_pool_bind_regulor(thread_pool *pool,thread_regulor* regulor_p);
 void thread_pool_run(thread_pool *pool);
 void thread_pool_destory(thread_pool *pool);
 void *thread_pool_worker(void *q);

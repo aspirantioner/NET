@@ -1,26 +1,24 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "server.h"
+#include "filefd.h"
+#include "logclient.h"
 #include <signal.h>
 
-int main()
+int main(int argc, char **argv)
 {
-    /*init log appender*/
-    logAppender epoller_logappender;
-    logAppendInit(&epoller_logappender, "./epoll.log", O_TRUNC | O_RDWR);
-    logAppender dealer_logappender;
-    logAppendInit(&dealer_logappender, "./deal.log", O_TRUNC | O_RDWR);
-    logAppender acceptor_logappender;
-    logAppendInit(&acceptor_logappender, "./acceptor.log", O_CREAT | O_TRUNC | O_RDWR);
-	logAppender server_logappender;
-	logAppendInit(&server_logappender, "./server.log", O_CREAT | O_TRUNC | O_RDWR);
+
     /*init acceptor*/
     struct acceptor ac;
-    acceptor_init(&ac, AF_INET, SOCK_STREAM, "192.168.80.129", 1234, 100, &acceptor_logappender);
+    acceptor_init(&ac, AF_INET, SOCK_STREAM, "192.168.80.129", 1234, 100);
+    log_client_init(&ac.log_cli, "192.168.80.128", 12345);
+    log_client_open_file(&ac.log_cli, "./acceptor.log", O_CREAT | O_TRUNC | O_RDWR);
 
     /*init epoller*/
     struct epoller ep;
-    epoller_init(&ep, &epoller_logappender);
+    epoller_init(&ep);
+    log_client_init(&ep.log_cli, "192.168.80.128", 12345);
+    log_client_open_file(&ep.log_cli, "./epoller.log", O_CREAT | O_TRUNC | O_RDWR);
 
     /*init connection regulor*/
     struct conner co;
@@ -28,16 +26,18 @@ int main()
 
     /*init client send data dealer*/
     struct dealer de;
-    dealer_init(&de, &dealer_logappender, dealer_run,100, 3, 10, 41, 5, 5);
-
-    /*init log receiver*/
-    struct log_rever lo;
-    log_rever_init(&lo, 100, 3, 10, 41, 5, 5);
+    struct thread_pool dealer_thread_pool;
+    thread_pool_init(&dealer_thread_pool, 10, 3, 5);
+    dealer_init(&de, &dealer_thread_pool, dealer_run);
+    log_client_init(&de.log_cli, "192.168.80.128", 12345);
+    log_client_open_file(&de.log_cli, "./dealer.log", O_CREAT | O_TRUNC | O_RDWR);
 
     /*binf ac ep de log for server sys*/
     struct server srv;
-    server_init(&srv, &ac, &ep, &co, &de, &lo, &server_logappender, 41);
-    
+    server_init(&srv, &ac, &ep, &co, &de);
+    log_client_init(&srv.log_cli, "192.168.80.128", 12345);
+    log_client_open_file(&srv.log_cli, "./server.log", O_CREAT | O_TRUNC | O_RDWR);
+
     server_run(&srv);
     server_cmd(&srv);
 }
