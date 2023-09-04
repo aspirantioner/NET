@@ -21,13 +21,13 @@ void log_server_init(struct log_server *log_server_p, const char *server_ip, in_
         perror("bind error");
     }
 
-    /*set scoket buff size*/
-    int buff_size = 0;
-    socklen_t opt_len = sizeof(int);
-    getsockopt(log_server_p->log_socket, SOL_SOCKET, SO_RCVBUF, &buff_size, &opt_len);
-    printf("%d\n", buff_size);
-    buff_size *= 2;
-    setsockopt(log_server_p->log_socket, SOL_SOCKET, SO_RCVBUF, &buff_size, opt_len);
+    // /*set scoket buff size*/
+    // int buff_size = 0;
+    // socklen_t opt_len = sizeof(int);
+    // getsockopt(log_server_p->log_socket, SOL_SOCKET, SO_RCVBUF, &buff_size, &opt_len);
+    // printf("%d\n", buff_size);
+    // buff_size *= 2;
+    // setsockopt(log_server_p->log_socket, SOL_SOCKET, SO_RCVBUF, &buff_size, opt_len);
 
     log_server_p->log_thread_pool_p = thread_pool_p; // set thread pool
     log_server_p->bitmap_p = bitmap_p;               // set file fd bitmap

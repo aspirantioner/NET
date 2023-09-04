@@ -23,7 +23,7 @@ void log_client_init(struct log_client *log_client_p, const char *server_ip, in_
     {
         perror("connect");
     };
-    
+
     log_client_p->log_pkt.log_append.appendfd = 0; // judge if open file fd
 }
 
@@ -41,7 +41,10 @@ bool log_client_open_file(struct log_client *log_client_p, char *file_name, int 
 void log_client_write(struct log_client *log_client_p)
 {
     log_client_p->log_pkt.log_append.mode = O_WRONLY;
-    write(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet));
+    if (write(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet)) == -1)
+    {
+        perror("udp write");
+    };
     // sendto(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet), 0, (struct sockaddr *)&log_client_p->log_server_addr, sizeof(struct sockaddr));
 }
 
