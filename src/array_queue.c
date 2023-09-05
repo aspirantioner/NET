@@ -6,20 +6,26 @@
 struct array_queue *array_queue_create(int capacity)
 {
 	assert(capacity > 0);
+
 	struct array_queue *queue = (struct array_queue *)malloc(sizeof(struct array_queue));
 	assert(queue != NULL);
+
 	queue->array = (void **)malloc(sizeof(void *) * capacity);
 	assert(queue->array != NULL);
-	queue->capacity = capacity;
+
+	queue->capacity = capacity;//initial queue size and capacity
 	queue->size = 0;
+
 	return queue;
 }
+
 void array_queue_insert(struct array_queue *queue, void *elem)
 {
 	queue->array[queue->tail] = elem;
 	queue->tail = (queue->tail + 1) % queue->capacity;
 	queue->size++;
 }
+
 void *array_queue_fetch(struct array_queue *queue)
 {
 	void *elem = queue->array[queue->head];
@@ -27,6 +33,7 @@ void *array_queue_fetch(struct array_queue *queue)
 	queue->size--;
 	return elem;
 }
+
 bool array_queue_empty(struct array_queue *queue)
 {
 	return queue->size == 0 ? true : false;

@@ -30,7 +30,7 @@ void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char
     bzero(&ac->cli_addr, ac->len);
 }
 
-void *accpetor_run(void *q)
+void *acceptor_run(void *q)
 {
 
     write(STDOUT_FILENO, "srv: acceptor running!\n", 24);
@@ -106,4 +106,16 @@ void *accpetor_run(void *q)
     }
 
     return NULL;
+}
+
+void acceptor_destroy(struct acceptor* ac_p){
+
+    lio_thread_exit(&ac_p->thread);
+    pthread_join(ac_p->thread.thread_id, NULL);
+    
+    close(ac_p->listen_socket);
+
+    if(ac_p->log_cli.log_pkt.log_append.appendfd>0){
+        log_client_close(&ac_p->log_cli);
+    }
 }

@@ -1,7 +1,6 @@
 #ifndef _EPOLLER_H
 #define _EPOLLER_H
 
-#define EVENTS_SIZE 1025 // sys max filefd num +1
 
 #include "dealer.h"
 #include "logclient.h"
@@ -24,4 +23,5 @@ typedef struct epoller
 
 void epoller_init(struct epoller *p);
 void *epoller_run(void *q);
+void epoller_destroy(struct epoller *ep_p);
 #endif

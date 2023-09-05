@@ -4,7 +4,7 @@
 CMakeFiles/srv.dir/src/acceptor.c.o: ../include/acceptor.h
 CMakeFiles/srv.dir/src/acceptor.c.o: ../include/array_queue.h
 CMakeFiles/srv.dir/src/acceptor.c.o: ../include/bitmap.h
-CMakeFiles/srv.dir/src/acceptor.c.o: ../include/conner.h
+CMakeFiles/srv.dir/src/acceptor.c.o: ../include/conn_pool.h
 CMakeFiles/srv.dir/src/acceptor.c.o: ../include/dealer.h
 CMakeFiles/srv.dir/src/acceptor.c.o: ../include/epoller.h
 CMakeFiles/srv.dir/src/acceptor.c.o: ../include/lio_thread.h
@@ -21,14 +21,14 @@ CMakeFiles/srv.dir/src/array_queue.c.o: ../src/array_queue.c
 CMakeFiles/srv.dir/src/bitmap.c.o: ../include/bitmap.h
 CMakeFiles/srv.dir/src/bitmap.c.o: ../src/bitmap.c
 
-CMakeFiles/srv.dir/src/conner.c.o: ../include/conner.h
-CMakeFiles/srv.dir/src/conner.c.o: ../include/filefd.h
-CMakeFiles/srv.dir/src/conner.c.o: ../src/conner.c
+CMakeFiles/srv.dir/src/conn_pool.c.o: ../include/conn_pool.h
+CMakeFiles/srv.dir/src/conn_pool.c.o: ../include/filefd.h
+CMakeFiles/srv.dir/src/conn_pool.c.o: ../src/conn_pool.c
 
 CMakeFiles/srv.dir/src/dealer.c.o: ../include/acceptor.h
 CMakeFiles/srv.dir/src/dealer.c.o: ../include/array_queue.h
 CMakeFiles/srv.dir/src/dealer.c.o: ../include/bitmap.h
-CMakeFiles/srv.dir/src/dealer.c.o: ../include/conner.h
+CMakeFiles/srv.dir/src/dealer.c.o: ../include/conn_pool.h
 CMakeFiles/srv.dir/src/dealer.c.o: ../include/dealer.h
 CMakeFiles/srv.dir/src/dealer.c.o: ../include/epoller.h
 CMakeFiles/srv.dir/src/dealer.c.o: ../include/lio_thread.h
@@ -42,7 +42,7 @@ CMakeFiles/srv.dir/src/dealer.c.o: ../src/dealer.c
 CMakeFiles/srv.dir/src/epoller.c.o: ../include/acceptor.h
 CMakeFiles/srv.dir/src/epoller.c.o: ../include/array_queue.h
 CMakeFiles/srv.dir/src/epoller.c.o: ../include/bitmap.h
-CMakeFiles/srv.dir/src/epoller.c.o: ../include/conner.h
+CMakeFiles/srv.dir/src/epoller.c.o: ../include/conn_pool.h
 CMakeFiles/srv.dir/src/epoller.c.o: ../include/dealer.h
 CMakeFiles/srv.dir/src/epoller.c.o: ../include/epoller.h
 CMakeFiles/srv.dir/src/epoller.c.o: ../include/filefd.h
@@ -83,7 +83,7 @@ CMakeFiles/srv.dir/src/logserver.c.o: ../src/logserver.c
 CMakeFiles/srv.dir/src/server.c.o: ../include/acceptor.h
 CMakeFiles/srv.dir/src/server.c.o: ../include/array_queue.h
 CMakeFiles/srv.dir/src/server.c.o: ../include/bitmap.h
-CMakeFiles/srv.dir/src/server.c.o: ../include/conner.h
+CMakeFiles/srv.dir/src/server.c.o: ../include/conn_pool.h
 CMakeFiles/srv.dir/src/server.c.o: ../include/dealer.h
 CMakeFiles/srv.dir/src/server.c.o: ../include/epoller.h
 CMakeFiles/srv.dir/src/server.c.o: ../include/lio_thread.h

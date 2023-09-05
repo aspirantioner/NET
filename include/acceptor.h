@@ -9,9 +9,6 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-#define ACCEPT_INIT_NUM 100
-#define ACCEPT_ADD_NUM 20
-
 typedef struct acceptor
 {
 
@@ -33,12 +30,14 @@ socket_type:SOCK_STRAEM or SOCK_DGRAM
 server_ip:ipv4 or ipv6 str
 server_port:bind server port
 list_queue_size: listen socket size
-log_p: acceptor log appender
 */
 void acceptor_init(struct acceptor *ac, int ip_type, int socket_type, const char *server_ip, in_port_t server_port, unsigned int listen_queue_size);
 
 /*
 p:server sys pointer
 */
-void *accpetor_run(void *p);
+void *acceptor_run(void *p);
+
+/*destroy acceptor*/
+void acceptor_destroy(struct acceptor *ac_p);
 #endif

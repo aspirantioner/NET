@@ -28,7 +28,7 @@ stdbool.h
 
 ../include/bitmap.h
 
-../include/conner.h
+../include/conn_pool.h
 arpa/inet.h
 -
 stdlib.h
@@ -129,8 +129,8 @@ acceptor.h
 ../include/acceptor.h
 epoller.h
 ../include/epoller.h
-conner.h
-../include/conner.h
+conn_pool.h
+../include/conn_pool.h
 array_queue.h
 ../include/array_queue.h
 dealer.h

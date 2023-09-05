@@ -11,7 +11,7 @@ typedef struct dealer
 {
     struct thread_pool *dealer_thread_pool_p;
     log_client log_cli;
-    deal_fun *dealer_do_fun;
+    deal_fun *dealer_do_fun; // receive client data callback func
 } dealer;
 
 void dealer_init(dealer *p, struct thread_pool *dealer_thread_pool_p, deal_fun *dealer_func);

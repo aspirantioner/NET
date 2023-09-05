@@ -1,12 +1,11 @@
-#ifndef _CONNER_H
-#define _CONNER_H
+#ifndef _CONN_POOL_H
+#define _CONN_POOL_H
 
 #include <arpa/inet.h>
 #include <stdlib.h>
 #include <pthread.h>
 
 #define IP_LEN 30
-#define MAX_CONN_NUM 1025
 
 typedef struct conn
 {
@@ -16,13 +15,13 @@ typedef struct conn
     struct server *p;
 } conn;
 
-typedef struct conner
+typedef struct conn_pool
 {
     struct conn *conn_arry;
     int conn_num;
     pthread_mutex_t conn_mutex;
-} conner;
+} conn_pool;
 
-void conner_init(conner *p);
-void conner_closeall(conner *p);
+void conn_pool_init(conn_pool *p);
+void conn_pool_destroy(conn_pool *p);
 #endif

@@ -96,18 +96,18 @@ CMakeFiles/srv.dir/src/bitmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srv.dir/src/bitmap.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ljf/data/code/NET_GIT/src/bitmap.c -o CMakeFiles/srv.dir/src/bitmap.c.s
 
-CMakeFiles/srv.dir/src/conner.c.o: CMakeFiles/srv.dir/flags.make
-CMakeFiles/srv.dir/src/conner.c.o: ../src/conner.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/srv.dir/src/conner.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/conner.c.o   -c /home/ljf/data/code/NET_GIT/src/conner.c
+CMakeFiles/srv.dir/src/conn_pool.c.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/src/conn_pool.c.o: ../src/conn_pool.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/srv.dir/src/conn_pool.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/conn_pool.c.o   -c /home/ljf/data/code/NET_GIT/src/conn_pool.c
 
-CMakeFiles/srv.dir/src/conner.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srv.dir/src/conner.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ljf/data/code/NET_GIT/src/conner.c > CMakeFiles/srv.dir/src/conner.c.i
+CMakeFiles/srv.dir/src/conn_pool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srv.dir/src/conn_pool.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ljf/data/code/NET_GIT/src/conn_pool.c > CMakeFiles/srv.dir/src/conn_pool.c.i
 
-CMakeFiles/srv.dir/src/conner.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srv.dir/src/conner.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ljf/data/code/NET_GIT/src/conner.c -o CMakeFiles/srv.dir/src/conner.c.s
+CMakeFiles/srv.dir/src/conn_pool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srv.dir/src/conn_pool.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ljf/data/code/NET_GIT/src/conn_pool.c -o CMakeFiles/srv.dir/src/conn_pool.c.s
 
 CMakeFiles/srv.dir/src/dealer.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/dealer.c.o: ../src/dealer.c
@@ -231,7 +231,7 @@ srv_OBJECTS = \
 "CMakeFiles/srv.dir/src/acceptor.c.o" \
 "CMakeFiles/srv.dir/src/array_queue.c.o" \
 "CMakeFiles/srv.dir/src/bitmap.c.o" \
-"CMakeFiles/srv.dir/src/conner.c.o" \
+"CMakeFiles/srv.dir/src/conn_pool.c.o" \
 "CMakeFiles/srv.dir/src/dealer.c.o" \
 "CMakeFiles/srv.dir/src/epoller.c.o" \
 "CMakeFiles/srv.dir/src/filefd.c.o" \
@@ -248,7 +248,7 @@ srv_EXTERNAL_OBJECTS =
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/acceptor.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/array_queue.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/bitmap.c.o
-../lib/libsrv.so: CMakeFiles/srv.dir/src/conner.c.o
+../lib/libsrv.so: CMakeFiles/srv.dir/src/conn_pool.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/dealer.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/epoller.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/filefd.c.o

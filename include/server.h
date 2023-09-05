@@ -6,7 +6,7 @@
 #include "log.h"
 #include "acceptor.h"
 #include "epoller.h"
-#include "conner.h"
+#include "conn_pool.h"
 #include "array_queue.h"
 #include "dealer.h"
 #include "thread_pool.h"
@@ -25,8 +25,8 @@ typedef struct server
     /*epoller*/
     epoller *ep;
 
-    /*conner*/
-    conner *co;
+    /*conn_pool*/
+    conn_pool *co;
 
     /*dealer*/
     dealer *de;
@@ -35,7 +35,7 @@ typedef struct server
     log_client log_cli;
 
 } server;
-void server_init(server *srv, acceptor *ac, epoller *ep, conner *co, dealer *de);
+void server_init(server *srv, acceptor *ac, epoller *ep, conn_pool *co, dealer *de);
 void server_run(struct server *p);
 void server_cmd(struct server *p);
 void exit_handle(int sig);

@@ -5,7 +5,7 @@ CMakeFiles/srv.dir/src/acceptor.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
- ../include/conner.h
+ ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
  ../include/lio_thread.h
@@ -21,15 +21,15 @@ CMakeFiles/srv.dir/src/array_queue.c.o
 CMakeFiles/srv.dir/src/bitmap.c.o
  ../include/bitmap.h
  /home/ljf/data/code/NET_GIT/src/bitmap.c
-CMakeFiles/srv.dir/src/conner.c.o
- ../include/conner.h
+CMakeFiles/srv.dir/src/conn_pool.c.o
+ ../include/conn_pool.h
  ../include/filefd.h
- /home/ljf/data/code/NET_GIT/src/conner.c
+ /home/ljf/data/code/NET_GIT/src/conn_pool.c
 CMakeFiles/srv.dir/src/dealer.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
- ../include/conner.h
+ ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
  ../include/lio_thread.h
@@ -43,7 +43,7 @@ CMakeFiles/srv.dir/src/epoller.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
- ../include/conner.h
+ ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
  ../include/filefd.h
@@ -84,7 +84,7 @@ CMakeFiles/srv.dir/src/server.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
- ../include/conner.h
+ ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
  ../include/lio_thread.h

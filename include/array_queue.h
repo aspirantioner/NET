@@ -9,8 +9,8 @@ typedef struct array_queue
 	void **array;
 	int head;
 	int tail;
-	int capacity;
-	int size;
+	int capacity;//queue size limit
+	int size;//queue now size
 } array_queue;
 
 struct array_queue *array_queue_create(int capacity);

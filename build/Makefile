@@ -284,32 +284,32 @@ src/bitmap.c.s:
 	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/bitmap.c.s
 .PHONY : src/bitmap.c.s
 
-src/conner.o: src/conner.c.o
+src/conn_pool.o: src/conn_pool.c.o
 
-.PHONY : src/conner.o
+.PHONY : src/conn_pool.o
 
 # target to build an object file
-src/conner.c.o:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/conner.c.o
-.PHONY : src/conner.c.o
+src/conn_pool.c.o:
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/conn_pool.c.o
+.PHONY : src/conn_pool.c.o
 
-src/conner.i: src/conner.c.i
+src/conn_pool.i: src/conn_pool.c.i
 
-.PHONY : src/conner.i
+.PHONY : src/conn_pool.i
 
 # target to preprocess a source file
-src/conner.c.i:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/conner.c.i
-.PHONY : src/conner.c.i
+src/conn_pool.c.i:
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/conn_pool.c.i
+.PHONY : src/conn_pool.c.i
 
-src/conner.s: src/conner.c.s
+src/conn_pool.s: src/conn_pool.c.s
 
-.PHONY : src/conner.s
+.PHONY : src/conn_pool.s
 
 # target to generate assembly for a file
-src/conner.c.s:
-	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/conner.c.s
-.PHONY : src/conner.c.s
+src/conn_pool.c.s:
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/conn_pool.c.s
+.PHONY : src/conn_pool.c.s
 
 src/dealer.o: src/dealer.c.o
 
@@ -580,9 +580,9 @@ help:
 	@echo "... src/bitmap.o"
 	@echo "... src/bitmap.i"
 	@echo "... src/bitmap.s"
-	@echo "... src/conner.o"
-	@echo "... src/conner.i"
-	@echo "... src/conner.s"
+	@echo "... src/conn_pool.o"
+	@echo "... src/conn_pool.i"
+	@echo "... src/conn_pool.s"
 	@echo "... src/dealer.o"
 	@echo "... src/dealer.i"
 	@echo "... src/dealer.s"

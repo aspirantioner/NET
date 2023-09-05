@@ -85,3 +85,16 @@ void *epoller_run(void *q)
         sigprocmask(SIG_UNBLOCK, &sigset, NULL);
     }
 }
+
+void epoller_destroy(struct epoller *ep_p){
+    lio_thread_exit(&ep_p->thread);
+	pthread_join(ep_p->thread.thread_id, NULL);
+
+    close(ep_p->epfd);
+    free(ep_p->events_array);
+
+    if (ep_p->log_cli.log_pkt.log_append.appendfd > 0)
+	{
+		log_client_close(&ep_p->log_cli);
+	}
+}
