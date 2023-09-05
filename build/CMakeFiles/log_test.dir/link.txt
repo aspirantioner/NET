@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/log_test.dir/log_test.c.o  -o ../bin/log_test  -Wl,-rpath,/home/ljf/data/code/NET_GIT/lib ../lib/libsrv.so -lpthread 

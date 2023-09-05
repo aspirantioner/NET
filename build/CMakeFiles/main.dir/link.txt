@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/main.dir/main.c.o  -o ../bin/main  -Wl,-rpath,/home/ljf/data/code/NET_GIT/lib ../lib/libsrv.so -lpthread 

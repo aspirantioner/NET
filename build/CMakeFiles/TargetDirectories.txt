@@ -1,0 +1,5 @@
+/home/ljf/data/code/NET_GIT/build/CMakeFiles/edit_cache.dir
+/home/ljf/data/code/NET_GIT/build/CMakeFiles/rebuild_cache.dir
+/home/ljf/data/code/NET_GIT/build/CMakeFiles/log_test.dir
+/home/ljf/data/code/NET_GIT/build/CMakeFiles/main.dir
+/home/ljf/data/code/NET_GIT/build/CMakeFiles/srv.dir
