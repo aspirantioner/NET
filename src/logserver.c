@@ -107,10 +107,10 @@ void *log_deal(void *p)
     /*client request open file fd first*/
     if (log_pkt_p->log_append.appendfd == 0) // notice element arithmetic priority
     {
-        write(STDOUT_FILENO, "open file!\n", 12);
+        // write(STDOUT_FILENO, "open file!\n", 12);
         log_pkt_p->log_append.appendfd = open(log_pkt_p->log_append.appendfile, log_pkt_p->log_append.mode, S_IRUSR | S_IWUSR);
-        perror("Erorr:");
-        printf("open file fd is %d\n", log_pkt_p->log_append.appendfd);
+        // perror("Erorr:");
+        // printf("open file fd is %d\n", log_pkt_p->log_append.appendfd);
         sendto(log_server_p->log_socket, log_pkt_p, sizeof(struct log_packet), 0, (struct sockaddr *)client_addr_p, sizeof(struct sockaddr));
         btimap_set_one(log_server_p->bitmap_p, log_pkt_p->log_append.appendfd);
     }
@@ -118,7 +118,7 @@ void *log_deal(void *p)
     /*close opened client log file fd*/
     else if (log_pkt_p->log_append.mode == -1)
     {
-        write(STDOUT_FILENO, "close file fd!\n", 16);
+        // write(STDOUT_FILENO, "close file fd!\n", 16);
         if (fcntl(log_pkt_p->log_append.appendfd, F_GETFL) != -1)
         {
             close(log_pkt_p->log_append.appendfd);
@@ -159,7 +159,6 @@ void log_server_exit(struct log_server *log_server_p)
     {
         if (bitmap_bit_check(log_server_p->bitmap_p, i) == 1)
         {
-            write(STDOUT_FILENO, "entry!\n", 8);
             close(i);
         }
     }

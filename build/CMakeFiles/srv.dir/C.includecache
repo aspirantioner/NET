@@ -88,16 +88,6 @@ errno.h
 stdbool.h
 -
 
-/home/ljf/data/code/NET_GIT/src/bitmap.c
-bitmap.h
-/home/ljf/data/code/NET_GIT/src/bitmap.h
-assert.h
-/home/ljf/data/code/NET_GIT/src/assert.h
-stdlib.h
--
-stdio.h
--
-
 /home/ljf/data/code/NET_GIT/src/logserver.c
 logserver.h
 /home/ljf/data/code/NET_GIT/src/logserver.h

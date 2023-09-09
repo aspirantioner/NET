@@ -26,6 +26,7 @@ CMakeFiles/srv.dir/src/cache_pool.c.o
  ../include/cache_pool.h
  /home/ljf/data/code/NET_GIT/src/cache_pool.c
 CMakeFiles/srv.dir/src/conn_pool.c.o
+ ../include/bitmap.h
  ../include/conn_pool.h
  ../include/filefd.h
  /home/ljf/data/code/NET_GIT/src/conn_pool.c

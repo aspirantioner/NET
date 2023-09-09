@@ -25,6 +25,7 @@ CMakeFiles/srv.dir/src/bitmap.c.o: ../src/bitmap.c
 CMakeFiles/srv.dir/src/cache_pool.c.o: ../include/cache_pool.h
 CMakeFiles/srv.dir/src/cache_pool.c.o: ../src/cache_pool.c
 
+CMakeFiles/srv.dir/src/conn_pool.c.o: ../include/bitmap.h
 CMakeFiles/srv.dir/src/conn_pool.c.o: ../include/conn_pool.h
 CMakeFiles/srv.dir/src/conn_pool.c.o: ../include/filefd.h
 CMakeFiles/srv.dir/src/conn_pool.c.o: ../src/conn_pool.c

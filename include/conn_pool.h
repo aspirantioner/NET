@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
+#include "bitmap.h"
 
 #define IP_LEN 30
 

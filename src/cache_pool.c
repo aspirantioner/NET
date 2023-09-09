@@ -15,14 +15,12 @@ void cache_pool_init(struct cache_pool *cache_pool_p, int cache_elem_size, int c
         perror("malloc");
         exit(0);
     }
-
-    cache_pool_p->cache_elem_sum = cache_elem_sum;
-    cache_pool_p->cache_elem_size = cache_elem_size;
-    cache_pool_p->cache_elem_recycle_limit = cache_elem_recycle_limit;
+    cache_pool_p->cache_elem_sum = cache_elem_sum;//set cache pool elem number
+    cache_pool_p->cache_elem_size = cache_elem_size;//set cache pool elem memory size
+    cache_pool_p->cache_elem_recycle_limit = cache_elem_recycle_limit;//set recycle elem num limit
 
     /*suspend elem in restore link queue*/
     cache_pool_p->cache_restore_queue.cache_queue_head = (intptr_t)cache_pool_p->cache_start_p;
-    // memcpy((void *)(cache_pool_p->cache_restore_queue.cache_queue_head + 4), &t, 8);
     int sum_size = cache_elem_size + sizeof(void *);
     for (int i = 0; i < cache_elem_sum - 1; i++)
     {
@@ -80,22 +78,14 @@ void cache_pool_recycle(struct cache_pool *cache_pool_p, void *cache_elem_p)
     {
         *(intptr_t *)(cache_pool_p->cache_recycle_queue.cache_queue_tail + cache_pool_p->cache_elem_size) = (intptr_t)cache_elem_p;
         cache_pool_p->cache_recycle_queue.cache_queue_tail = (intptr_t)cache_elem_p;
-        // printf("head next is %p\n", (void *)(*(intptr_t *)(cache_pool_p->cache_recycle_queue.cache_queue_head + cache_pool_p->cache_elem_size)));
     }
-    // printf("tail is %p\n", (void *)cache_pool_p->cache_recycle_queue.cache_queue_tail);
     cache_pool_p->cache_recycle_queue.cache_elem_num++;
 
+    /*start clear recycle queue if recycle num equal limit*/
     if (cache_pool_p->cache_recycle_queue.cache_elem_num == cache_pool_p->cache_elem_recycle_limit)
     {
-        // printf("recycle start!\n");
-        //  for (int i = 0; i < cache_pool_p->cache_elem_recycle_limit; i++)
-        //  {
-        //      printf("recycle is %p\n", (void *)cache_pool_p->cache_recycle_queue.cache_queue_head);
-        //      cache_pool_p->cache_recycle_queue.cache_queue_head = *(intptr_t *)(cache_pool_p->cache_recycle_queue.cache_queue_head + cache_pool_p->cache_elem_size);
-        //  }
         for (int i = 0; i < cache_pool_p->cache_elem_recycle_limit; i++)
         {
-            // printf("recycle is %p\n", (void *)cache_pool_p->cache_recycle_queue.cache_queue_head);
             if (cache_pool_p->cache_restore_queue.cache_elem_num == 0)
             {
                 cache_pool_p->cache_restore_queue.cache_queue_head = cache_pool_p->cache_recycle_queue.cache_queue_head;

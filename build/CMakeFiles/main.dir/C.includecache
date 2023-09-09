@@ -45,6 +45,8 @@ pthread.h
 -
 unistd.h
 -
+bitmap.h
+../include/bitmap.h
 
 ../include/dealer.h
 thread_pool.h
