@@ -74,5 +74,5 @@ void *dealer_run(void *q)
         }
         count += ret;
     }
-    return p->ca;
+    return NULL;
 }

@@ -1,4 +1,4 @@
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 108 server_destroy [INFO] 139963356796672 acceptor has exit!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 124 server_destroy [INFO] 139963356796672 conn_pool has close all!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 143 server_destroy [INFO] 139963356796672 epoller has exit!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 160 server_destroy [INFO] 139963356796672 dealer thread pool has destory!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 99 server_destroy [INFO] 140299840104192 acceptor has exit!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 115 server_destroy [INFO] 140299840104192 conn_pool has close all!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 130 server_destroy [INFO] 140299840104192 epoller has exit!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/server.c 142 server_destroy [INFO] 140299840104192 dealer thread pool has destory!

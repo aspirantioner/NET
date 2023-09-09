@@ -88,18 +88,9 @@ void server_destroy(struct server *p)
 	char buf[1024] = {0};
 
 	/*close acceptor*/
-	// lio_thread_exit(&p->ac->thread);
-	// pthread_join(p->ac->thread.thread_id, NULL);
-	// close(p->ac->listen_socket);
 	acceptor_destroy(p->ac);
 	int len = sprintf(buf, "acceptor has exit!\n");
 	write(STDOUT_FILENO, buf, strlen(buf));
-	
-	/*close acceptor log file*/
-	// if (p->ac->log_cli.log_pkt.log_append.appendfd > 0)
-	// {
-	// 	log_client_close(&p->ac->log_cli);
-	// }
 
 	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
@@ -127,14 +118,10 @@ void server_destroy(struct server *p)
 	}
 
 	/*close epoller*/
-	// lio_thread_exit(&p->ep->thread);
-	// pthread_join(p->ep->thread.thread_id, NULL);
 	epoller_destroy(p->ep);
 	bzero(buf, len);
 	len = sprintf(buf, "epoller has exit!\n");
 	write(STDOUT_FILENO, buf, len);
-	// close(p->ep->epfd);		   // close epoll fd
-	// free(p->ep->events_array); // free epoll event array
 	
 	if (p->log_cli.log_pkt.log_append.appendfd > 0)
 	{
@@ -144,11 +131,6 @@ void server_destroy(struct server *p)
 		p->log_cli.log_pkt.log_event._log_str_len += sprintf(p->log_cli.log_pkt.log_event._log_str + p->log_cli.log_pkt.log_event._log_str_len, "%s", buf);
 		log_client_write(&p->log_cli);
 	}
-	/*close epollor log file*/
-	// if (p->ep->log_cli.log_pkt.log_append.appendfd > 0)
-	// {
-	// 	log_client_close(&p->ep->log_cli);
-	// }
 
 	/*close dealer*/
 	thread_pool_destory(p->de->dealer_thread_pool_p); // destroy dealer thread pool

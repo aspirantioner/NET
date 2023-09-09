@@ -9,23 +9,25 @@ void cache_pool_init(struct cache_pool *cache_pool_p, int cache_elem_size, int c
 {
 
     /*init cache pool memory*/
-    cache_pool_p->cache_start_p = (void *)malloc((cache_elem_size + sizeof(intptr_t)) * cache_elem_sum);
+    int sum_size = cache_elem_size + 2 * sizeof(void *);
+    cache_pool_p->cache_start_p = (void *)malloc(sum_size * cache_elem_sum);
     if (!cache_pool_p->cache_start_p)
     {
         perror("malloc");
         exit(0);
     }
-    cache_pool_p->cache_elem_sum = cache_elem_sum;//set cache pool elem number
-    cache_pool_p->cache_elem_size = cache_elem_size;//set cache pool elem memory size
-    cache_pool_p->cache_elem_recycle_limit = cache_elem_recycle_limit;//set recycle elem num limit
+    cache_pool_p->cache_elem_sum = cache_elem_sum;                     // set cache pool elem number
+    cache_pool_p->cache_elem_size = cache_elem_size;                   // set cache pool elem memory size
+    cache_pool_p->cache_elem_recycle_limit = cache_elem_recycle_limit; // set recycle elem num limit
 
     /*suspend elem in restore link queue*/
     cache_pool_p->cache_restore_queue.cache_queue_head = (intptr_t)cache_pool_p->cache_start_p;
-    int sum_size = cache_elem_size + sizeof(void *);
-    for (int i = 0; i < cache_elem_sum - 1; i++)
+    for (int i = 0; i < cache_elem_sum; i++)
     {
-        *((intptr_t *)(cache_pool_p->cache_restore_queue.cache_queue_head + cache_elem_size + i * sum_size)) = (intptr_t)(cache_pool_p->cache_start_p + (i + 1) * sum_size);
+        *((intptr_t *)(cache_pool_p->cache_restore_queue.cache_queue_head + i * sum_size)) = (intptr_t)(cache_pool_p->cache_start_p + (i + 1) * sum_size);
+        *((intptr_t *)(cache_pool_p->cache_restore_queue.cache_queue_head + i * sum_size + sizeof(intptr_t))) = (intptr_t)cache_pool_p;
     }
+
     cache_pool_p->cache_restore_queue.cache_queue_tail = (intptr_t)cache_pool_p->cache_start_p + (sum_size * (cache_elem_sum - 1));
     cache_pool_p->cache_restore_queue.cache_elem_num = cache_elem_sum;
 
@@ -47,7 +49,7 @@ void *cache_pool_alloc(struct cache_pool *cache_pool_p)
         pthread_spin_lock(&cache_pool_p->cache_restore_queue_lock);
         if (cache_queue_p->cache_elem_num != 0)
         {
-            elem_p = (void *)cache_queue_p->cache_queue_head;
+            elem_p = (void *)(cache_queue_p->cache_queue_head + 2 * sizeof(intptr_t));
             if (cache_queue_p->cache_elem_num == 1)
             {
                 cache_queue_p->cache_queue_head = 0;
@@ -55,7 +57,7 @@ void *cache_pool_alloc(struct cache_pool *cache_pool_p)
             }
             else
             {
-                cache_queue_p->cache_queue_head = *(intptr_t *)(cache_queue_p->cache_queue_head + cache_pool_p->cache_elem_size);
+                cache_queue_p->cache_queue_head = *((intptr_t *)cache_queue_p->cache_queue_head);
             }
             cache_queue_p->cache_elem_num--;
             pthread_spin_unlock(&cache_pool_p->cache_restore_queue_lock);
@@ -66,18 +68,19 @@ void *cache_pool_alloc(struct cache_pool *cache_pool_p)
     return elem_p;
 }
 
-void cache_pool_recycle(struct cache_pool *cache_pool_p, void *cache_elem_p)
+void cache_pool_recycle(void *cache_elem_p)
 {
+    struct cache_pool *cache_pool_p = (struct cache_pool *)(*(intptr_t *)(cache_elem_p - sizeof(intptr_t)));
     pthread_spin_lock(&cache_pool_p->cache_restore_queue_lock);
     if (cache_pool_p->cache_recycle_queue.cache_elem_num == 0)
     {
-        cache_pool_p->cache_recycle_queue.cache_queue_head = (intptr_t)cache_elem_p;
-        cache_pool_p->cache_recycle_queue.cache_queue_tail = (intptr_t)cache_elem_p;
+        cache_pool_p->cache_recycle_queue.cache_queue_head = (intptr_t)(cache_elem_p - 2 * sizeof(intptr_t));
+        cache_pool_p->cache_recycle_queue.cache_queue_tail = (intptr_t)(cache_elem_p - 2 * sizeof(intptr_t));
     }
     else
     {
-        *(intptr_t *)(cache_pool_p->cache_recycle_queue.cache_queue_tail + cache_pool_p->cache_elem_size) = (intptr_t)cache_elem_p;
-        cache_pool_p->cache_recycle_queue.cache_queue_tail = (intptr_t)cache_elem_p;
+        *(intptr_t *)cache_pool_p->cache_recycle_queue.cache_queue_tail = (intptr_t)(cache_elem_p - 2 * sizeof(intptr_t));
+        cache_pool_p->cache_recycle_queue.cache_queue_tail = (intptr_t)(cache_elem_p - 2 * sizeof(intptr_t));
     }
     cache_pool_p->cache_recycle_queue.cache_elem_num++;
 
@@ -93,10 +96,10 @@ void cache_pool_recycle(struct cache_pool *cache_pool_p, void *cache_elem_p)
             }
             else
             {
-                *(intptr_t *)(cache_pool_p->cache_restore_queue.cache_queue_tail + cache_pool_p->cache_elem_size) = cache_pool_p->cache_recycle_queue.cache_queue_head;
+                *(intptr_t *)(cache_pool_p->cache_restore_queue.cache_queue_tail) = cache_pool_p->cache_recycle_queue.cache_queue_head;
                 cache_pool_p->cache_restore_queue.cache_queue_tail = cache_pool_p->cache_recycle_queue.cache_queue_head;
             }
-            cache_pool_p->cache_recycle_queue.cache_queue_head = *(intptr_t *)(cache_pool_p->cache_recycle_queue.cache_queue_head + cache_pool_p->cache_elem_size);
+            cache_pool_p->cache_recycle_queue.cache_queue_head = *(intptr_t *)(cache_pool_p->cache_recycle_queue.cache_queue_head);
             cache_pool_p->cache_restore_queue.cache_elem_num++;
         }
         cache_pool_p->cache_recycle_queue.cache_elem_num = 0;
