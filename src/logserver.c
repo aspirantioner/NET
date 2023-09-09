@@ -1,11 +1,9 @@
 #include "logserver.h"
 #include <signal.h>
 #include <assert.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include <filefd.h>
 
-void log_server_init(struct log_server *log_server_p, const char *server_ip, in_port_t server_port, struct thread_pool *thread_pool_p, struct bitmap *bitmap_p)
+void log_server_init(struct log_server *log_server_p, const char *server_ip, in_port_t server_port, struct thread_pool *thread_pool_p, struct bitmap *bitmap_p, struct cache_pool *cache_pool_p)
 {
 
     /*bind server ip and port*/
@@ -21,16 +19,9 @@ void log_server_init(struct log_server *log_server_p, const char *server_ip, in_
         perror("bind error");
     }
 
-    // /*set scoket buff size*/
-    // int buff_size = 0;
-    // socklen_t opt_len = sizeof(int);
-    // getsockopt(log_server_p->log_socket, SOL_SOCKET, SO_RCVBUF, &buff_size, &opt_len);
-    // printf("%d\n", buff_size);
-    // buff_size *= 2;
-    // setsockopt(log_server_p->log_socket, SOL_SOCKET, SO_RCVBUF, &buff_size, opt_len);
-
     log_server_p->log_thread_pool_p = thread_pool_p; // set thread pool
     log_server_p->bitmap_p = bitmap_p;               // set file fd bitmap
+    log_server_p->cache_pool_p = cache_pool_p;       // set server cache pool
 }
 
 void *log_server_receive(void *p)
@@ -39,7 +30,7 @@ void *log_server_receive(void *p)
     struct lio_thread *lio_thread_p = args[0];
     struct log_server *log_server_p = args[1];
 
-    struct sockaddr_in client_addr;
+
     int addr_len = sizeof(struct sockaddr); // get client ip and port info
 
     sigset_t sigset;
@@ -54,9 +45,9 @@ void *log_server_receive(void *p)
         {
             return NULL;
         }
-
-        struct log_packet *log_pkt_p = (struct log_packet *)malloc(sizeof(struct log_packet));
-        int ret = recvfrom(log_server_p->log_socket, log_pkt_p, sizeof(struct log_packet), 0, (struct sockaddr *)&client_addr, &addr_len);
+        struct log_client_set *log_client_set_p = cache_pool_alloc(log_server_p->cache_pool_p);
+        log_client_set_p->log_server_p = log_server_p;
+        int ret = recvfrom(log_server_p->log_socket, &log_client_set_p->log_pkt, sizeof(struct log_packet), 0, (struct sockaddr *)&(log_client_set_p->client_addr), &addr_len);
 
         if (lio_thread_p->state == THREAD_QUIT)
         {
@@ -69,14 +60,8 @@ void *log_server_receive(void *p)
         }
         sigprocmask(SIG_BLOCK, &sigset, NULL);
 
-        void **args = (void **)malloc(sizeof(void *) * 3);
-        struct sockaddr_in *client_addr_p = (struct sockaddr_in *)malloc(sizeof(struct sockaddr_in));
-        memcpy(client_addr_p, &client_addr, addr_len);
-        args[0] = log_server_p;
-        args[1] = log_pkt_p;
-        args[2] = client_addr_p;
-        work_unit *unit_p = (work_unit *)malloc(sizeof(work_unit));
-        unit_p->work_data = (void *)args;
+        work_unit *unit_p = cache_pool_alloc(log_server_p->cache_pool_p);
+        unit_p->work_data = log_client_set_p;
         unit_p->work_fun = log_deal;
         send_work_func(log_server_p->log_thread_pool_p, unit_p);
     }
@@ -114,10 +99,10 @@ void log_server_run(struct log_server *log_server_p)
 
 void *log_deal(void *p)
 {
-    void **args = p;
-    struct log_server *log_server_p = args[0];
-    struct log_packet *log_pkt_p = args[1];
-    struct sockaddr_in *client_addr_p = args[2];
+    log_client_set *log_client_set_p = (log_client_set *)p;
+    struct log_server *log_server_p = log_client_set_p->log_server_p;
+    struct log_packet *log_pkt_p = &(log_client_set_p->log_pkt);
+    struct sockaddr_in *client_addr_p = &(log_client_set_p->client_addr);
 
     /*client request open file fd first*/
     if (log_pkt_p->log_append.appendfd == 0) // notice element arithmetic priority
@@ -153,20 +138,18 @@ void *log_deal(void *p)
         }
     }
 
-    free(log_pkt_p);
-    free(client_addr_p);
-
-    return NULL;
+    return log_server_p->cache_pool_p;
 }
 
 void log_server_exit(struct log_server *log_server_p)
 {
-    /*close log  receive socket*/
-    close(log_server_p->log_socket);
 
     /*exit receive log thread*/
     lio_thread_exit(&log_server_p->thread);
     pthread_join(log_server_p->thread.thread_id, NULL);
+
+    /*close log  receive socket*/
+    close(log_server_p->log_socket);
 
     /*destroy thread pool*/
     thread_pool_destory(log_server_p->log_thread_pool_p);

@@ -12,6 +12,14 @@ stdbool.h
 
 ../include/bitmap.h
 
+../include/cache_pool.h
+pthread.h
+-
+unistd.h
+-
+stdint.h
+-
+
 ../include/filefd.h
 
 ../include/lio_thread.h
@@ -45,8 +53,14 @@ bitmap.h
 ../include/bitmap.h
 thread_pool.h
 ../include/thread_pool.h
+cache_pool.h
+../include/cache_pool.h
 lio_thread.h
 ../include/lio_thread.h
+pthread.h
+-
+bits/pthreadtypes.h
+-
 stdlib.h
 -
 string.h
@@ -54,6 +68,8 @@ string.h
 sys/socket.h
 -
 netinet/in.h
+-
+arpa/inet.h
 -
 
 ../include/thread_pool.h
@@ -75,6 +91,8 @@ stdbool.h
 /home/ljf/data/code/NET_GIT/log_test.c
 logserver.h
 /home/ljf/data/code/NET_GIT/logserver.h
+cache_pool.h
+/home/ljf/data/code/NET_GIT/cache_pool.h
 bitmap.h
 /home/ljf/data/code/NET_GIT/bitmap.h
 filefd.h

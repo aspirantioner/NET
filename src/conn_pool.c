@@ -1,11 +1,10 @@
-#include <unistd.h>
 #include <fcntl.h>
 #include "conn_pool.h"
 #include "filefd.h"
 
 void conn_pool_init(conn_pool *p)
 {
-    pthread_mutex_init(&p->conn_mutex, NULL);
+    pthread_spin_init(&p->conn_spin, PTHREAD_PROCESS_PRIVATE);
     p->conn_num = 0;
     int max_file_fd = get_max_file_fd() + 1;
     p->conn_arry = (struct conn *)malloc(sizeof(struct conn) * max_file_fd);
@@ -19,7 +18,7 @@ void conn_pool_init(conn_pool *p)
 
 void conn_pool_destroy(conn_pool *p)
 {
-    pthread_mutex_lock(&p->conn_mutex);
+    pthread_spin_lock(&p->conn_spin);
 
     int max_file_fd = get_max_file_fd() + 1;
 
@@ -30,7 +29,7 @@ void conn_pool_destroy(conn_pool *p)
             close(p->conn_arry[i].cli_fd);
         }
     }
-    pthread_mutex_unlock(&p->conn_mutex);
-    pthread_mutex_destroy(&p->conn_mutex);
+    pthread_spin_unlock(&p->conn_spin);
+    pthread_spin_destroy(&p->conn_spin);
     free(p->conn_arry);
 }

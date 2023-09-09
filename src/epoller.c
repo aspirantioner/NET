@@ -2,6 +2,7 @@
 #include "logclient.h"
 #include "server.h"
 #include "filefd.h"
+#include <sys/ioctl.h>
 
 void epoller_init(struct epoller *p)
 {
@@ -60,10 +61,12 @@ void *epoller_run(void *q)
         start = 0;
         while (start < count)
         {
-            struct work_unit *unit = (struct work_unit *)malloc(sizeof(struct work_unit));
-            unit->work_data = p->ep->events_array[start].data.ptr;
-            unit->work_fun = p->de->dealer_do_fun;
-            send_work_func(p->de->dealer_thread_pool_p, unit);
+            struct work_unit* unit_p = cache_pool_alloc(p->ca);
+            unit_p->work_data = p->ep->events_array[start].data.ptr;
+            unit_p->work_fun = p->de->dealer_do_fun;
+            int size = 0;
+            conn *conn_p = p->ep->events_array[start].data.ptr;
+            send_work_func(p->de->dealer_thread_pool_p, (void*)unit_p);
             start++;
         }
 
@@ -86,15 +89,16 @@ void *epoller_run(void *q)
     }
 }
 
-void epoller_destroy(struct epoller *ep_p){
+void epoller_destroy(struct epoller *ep_p)
+{
     lio_thread_exit(&ep_p->thread);
-	pthread_join(ep_p->thread.thread_id, NULL);
+    pthread_join(ep_p->thread.thread_id, NULL);
 
     close(ep_p->epfd);
     free(ep_p->events_array);
 
     if (ep_p->log_cli.log_pkt.log_append.appendfd > 0)
-	{
-		log_client_close(&ep_p->log_cli);
-	}
+    {
+        log_client_close(&ep_p->log_cli);
+    }
 }

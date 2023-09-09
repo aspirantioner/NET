@@ -3,6 +3,7 @@
 
 CMakeFiles/log_test.dir/log_test.c.o: ../include/array_queue.h
 CMakeFiles/log_test.dir/log_test.c.o: ../include/bitmap.h
+CMakeFiles/log_test.dir/log_test.c.o: ../include/cache_pool.h
 CMakeFiles/log_test.dir/log_test.c.o: ../include/filefd.h
 CMakeFiles/log_test.dir/log_test.c.o: ../include/lio_thread.h
 CMakeFiles/log_test.dir/log_test.c.o: ../include/log.h

@@ -4,6 +4,7 @@
 CMakeFiles/main.dir/main.c.o: ../include/acceptor.h
 CMakeFiles/main.dir/main.c.o: ../include/array_queue.h
 CMakeFiles/main.dir/main.c.o: ../include/bitmap.h
+CMakeFiles/main.dir/main.c.o: ../include/cache_pool.h
 CMakeFiles/main.dir/main.c.o: ../include/conn_pool.h
 CMakeFiles/main.dir/main.c.o: ../include/dealer.h
 CMakeFiles/main.dir/main.c.o: ../include/epoller.h

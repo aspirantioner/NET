@@ -5,6 +5,7 @@ CMakeFiles/srv.dir/src/acceptor.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
+ ../include/cache_pool.h
  ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
@@ -21,6 +22,9 @@ CMakeFiles/srv.dir/src/array_queue.c.o
 CMakeFiles/srv.dir/src/bitmap.c.o
  ../include/bitmap.h
  /home/ljf/data/code/NET_GIT/src/bitmap.c
+CMakeFiles/srv.dir/src/cache_pool.c.o
+ ../include/cache_pool.h
+ /home/ljf/data/code/NET_GIT/src/cache_pool.c
 CMakeFiles/srv.dir/src/conn_pool.c.o
  ../include/conn_pool.h
  ../include/filefd.h
@@ -29,6 +33,7 @@ CMakeFiles/srv.dir/src/dealer.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
+ ../include/cache_pool.h
  ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
@@ -43,6 +48,7 @@ CMakeFiles/srv.dir/src/epoller.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
+ ../include/cache_pool.h
  ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
@@ -66,6 +72,7 @@ CMakeFiles/srv.dir/src/log.c.o
 CMakeFiles/srv.dir/src/logclient.c.o
  ../include/array_queue.h
  ../include/bitmap.h
+ ../include/cache_pool.h
  ../include/lio_thread.h
  ../include/log.h
  ../include/logclient.h
@@ -75,6 +82,8 @@ CMakeFiles/srv.dir/src/logclient.c.o
 CMakeFiles/srv.dir/src/logserver.c.o
  ../include/array_queue.h
  ../include/bitmap.h
+ ../include/cache_pool.h
+ ../include/filefd.h
  ../include/lio_thread.h
  ../include/log.h
  ../include/logserver.h
@@ -84,6 +93,7 @@ CMakeFiles/srv.dir/src/server.c.o
  ../include/acceptor.h
  ../include/array_queue.h
  ../include/bitmap.h
+ ../include/cache_pool.h
  ../include/conn_pool.h
  ../include/dealer.h
  ../include/epoller.h
@@ -95,7 +105,17 @@ CMakeFiles/srv.dir/src/server.c.o
  ../include/thread_pool.h
  /home/ljf/data/code/NET_GIT/src/server.c
 CMakeFiles/srv.dir/src/thread_pool.c.o
+ ../include/acceptor.h
  ../include/array_queue.h
+ ../include/bitmap.h
+ ../include/cache_pool.h
+ ../include/conn_pool.h
+ ../include/dealer.h
+ ../include/epoller.h
  ../include/lio_thread.h
+ ../include/log.h
+ ../include/logclient.h
+ ../include/logserver.h
+ ../include/server.h
  ../include/thread_pool.h
  /home/ljf/data/code/NET_GIT/src/thread_pool.c

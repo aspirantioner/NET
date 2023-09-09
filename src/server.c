@@ -22,36 +22,43 @@ void exit_handle(int sig)
 init server system
 bind ac,ep,co,de,lo and set server log,exit sig
 */
-void server_init(server *srv, acceptor *ac, epoller *ep, conn_pool *co, dealer *de)
+void server_init(server *srv, acceptor *ac, epoller *ep, conn_pool *co, dealer *de,cache_pool* ca)
 {
 	char buf[1024]; // info char buffer
+	int buf_len = 0;
 
 	/*init server acceptor*/
 	assert(ac != NULL);
 	srv->ac = ac;
-	sprintf(buf, "srv: acceptor bind -ip:%s -port:%hu init success!\n", srv->ac->server_ip, srv->ac->server_port);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
+	buf_len=sprintf(buf, "srv: acceptor bind -ip:%s -port:%hu init success!\n", srv->ac->server_ip, srv->ac->server_port);
+	write(STDOUT_FILENO, buf, buf_len);
+	bzero(buf, buf_len);
 
 	/*init server epoller*/
 	assert(ep != NULL);
 	srv->ep = ep;
-	sprintf(buf, "srv: epoller -epfd:%d init success!\n", srv->ep->epfd);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
+	buf_len=sprintf(buf, "srv: epoller -epfd:%d init success!\n", srv->ep->epfd);
+	write(STDOUT_FILENO, buf, buf_len);
+	bzero(buf, buf_len);
 
 	/*init server conn_pool*/
 	srv->co = co;
-	sprintf(buf, "srv: conn_pool -exitnum:%d init success!\n", srv->co->conn_num);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
+	buf_len=sprintf(buf, "srv: conn_pool -exitnum:%d init success!\n", srv->co->conn_num);
+	write(STDOUT_FILENO, buf, buf_len);
+	bzero(buf, buf_len);
 
 	/*init server dealer*/
 	assert(de != NULL);
 	srv->de = de;
-	sprintf(buf, "srv: dealer -minnum:%d -maxnum:%d -exitnum:%d -queue capacity:%d init success!\n", de->dealer_thread_pool_p->work_thread_min_num, de->dealer_thread_pool_p->work_thread_max_num, de->dealer_thread_pool_p->work_thread_exit_num, de->dealer_thread_pool_p->queue->capacity);
-	write(STDOUT_FILENO, buf, strlen(buf));
-	bzero(buf, strlen(buf));
+	buf_len=sprintf(buf, "srv: dealer -minnum:%d -maxnum:%d -exitnum:%d -queue capacity:%d init success!\n", de->dealer_thread_pool_p->work_thread_min_num, de->dealer_thread_pool_p->work_thread_max_num, de->dealer_thread_pool_p->work_thread_exit_num, de->dealer_thread_pool_p->queue->capacity);
+	write(STDOUT_FILENO, buf, buf_len);
+	bzero(buf, buf_len);
+
+	assert(ca != NULL);
+	srv->ca = ca;
+	buf_len=sprintf(buf, "srv: cache_pool -cache_elem_size:%d -cache_elem_sum:%d -recycle_queue_limit:%d init success!\n", ca->cache_elem_size, ca->cache_elem_sum,ca->cache_elem_recycle_limit);
+	write(STDOUT_FILENO, buf, buf_len);
+	bzero(buf, buf_len);
 
 	write(STDOUT_FILENO, "server init successfully!\n", 27);
 	return;
@@ -181,9 +188,6 @@ void server_cmd(struct server *p)
 	{
 		write(STDOUT_FILENO, "srv: ", strlen("srv: "));
 		read(STDIN_FILENO, cmd_buf, 1024);
-		// struct work_unit *unit;
-		// struct logInfo *loginfo;
-		// struct logEvent *logevent;
 		if (strncmp(cmd_buf, "exit", 4) == 0)
 		{
 			server_destroy(p);

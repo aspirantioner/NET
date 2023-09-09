@@ -40,12 +40,12 @@ void *dealer_run(void *q)
             }
             else
             {
-                pthread_mutex_lock(&p->co->conn_mutex);
+                pthread_spin_lock(&p->co->conn_spin);
                 epoll_ctl(p->ep->epfd, EPOLL_CTL_DEL, cli_conn->cli_fd, NULL);
                 close(cli_conn->cli_fd);
                 p->co->conn_arry[cli_conn->cli_fd].cli_fd = -1;
                 p->co->conn_num--;
-                pthread_mutex_unlock(&p->co->conn_mutex);
+                pthread_spin_unlock(&p->co->conn_spin);
                 break;
             }
         }
@@ -54,12 +54,12 @@ void *dealer_run(void *q)
         {
 
             /*update client conn info*/
-            pthread_mutex_lock(&p->co->conn_mutex);
+            pthread_spin_lock(&p->co->conn_spin);
             epoll_ctl(p->ep->epfd, EPOLL_CTL_DEL, cli_conn->cli_fd, NULL);
             close(cli_conn->cli_fd);
             p->co->conn_arry[cli_conn->cli_fd].cli_fd = -1;
             p->co->conn_num--;
-            pthread_mutex_unlock(&p->co->conn_mutex);
+            pthread_spin_unlock(&p->co->conn_spin);
 
             if (p->de->log_cli.log_pkt.log_append.appendfd > 0)
             {
@@ -74,4 +74,5 @@ void *dealer_run(void *q)
         }
         count += ret;
     }
+    return p->ca;
 }

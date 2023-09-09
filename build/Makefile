@@ -284,6 +284,33 @@ src/bitmap.c.s:
 	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/bitmap.c.s
 .PHONY : src/bitmap.c.s
 
+src/cache_pool.o: src/cache_pool.c.o
+
+.PHONY : src/cache_pool.o
+
+# target to build an object file
+src/cache_pool.c.o:
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/cache_pool.c.o
+.PHONY : src/cache_pool.c.o
+
+src/cache_pool.i: src/cache_pool.c.i
+
+.PHONY : src/cache_pool.i
+
+# target to preprocess a source file
+src/cache_pool.c.i:
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/cache_pool.c.i
+.PHONY : src/cache_pool.c.i
+
+src/cache_pool.s: src/cache_pool.c.s
+
+.PHONY : src/cache_pool.s
+
+# target to generate assembly for a file
+src/cache_pool.c.s:
+	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/src/cache_pool.c.s
+.PHONY : src/cache_pool.c.s
+
 src/conn_pool.o: src/conn_pool.c.o
 
 .PHONY : src/conn_pool.o
@@ -580,6 +607,9 @@ help:
 	@echo "... src/bitmap.o"
 	@echo "... src/bitmap.i"
 	@echo "... src/bitmap.s"
+	@echo "... src/cache_pool.o"
+	@echo "... src/cache_pool.i"
+	@echo "... src/cache_pool.s"
 	@echo "... src/conn_pool.o"
 	@echo "... src/conn_pool.i"
 	@echo "... src/conn_pool.s"

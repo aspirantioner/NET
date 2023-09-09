@@ -77,12 +77,12 @@ void *acceptor_run(void *q)
 
             memcpy(p->co->conn_arry[cli_fd].cli_ip, cli_ip, strlen(cli_ip));
 
-            pthread_mutex_lock(&p->co->conn_mutex);
+            pthread_spin_lock(&p->co->conn_spin);
             p->co->conn_arry[cli_fd].cli_port = cli_port;
             p->co->conn_arry[cli_fd].cli_fd = cli_fd;
             p->co->conn_arry[cli_fd].p = p;
             p->co->conn_num++;
-            pthread_mutex_unlock(&p->co->conn_mutex);
+            pthread_spin_unlock(&p->co->conn_spin);
 
             ev.data.ptr = p->co->conn_arry + cli_fd;
             ev.events = EPOLLIN | EPOLLET;

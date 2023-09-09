@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/srv.dir/src/acceptor.c.o"
   "CMakeFiles/srv.dir/src/array_queue.c.o"
   "CMakeFiles/srv.dir/src/bitmap.c.o"
+  "CMakeFiles/srv.dir/src/cache_pool.c.o"
   "CMakeFiles/srv.dir/src/conn_pool.c.o"
   "CMakeFiles/srv.dir/src/dealer.c.o"
   "CMakeFiles/srv.dir/src/epoller.c.o"

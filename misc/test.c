@@ -1,59 +1,55 @@
+#define __USE_XOPEN2K 1
+
 #include <stdio.h>
 #include <stdbool.h>
-#include <pthread.h>
+#include <stdlib.h>
 #include <signal.h>
 #include <unistd.h>
-#include "acceptor.h"
-#include "httpparser.h"
+#include <sys/resource.h>
+#include <sys/types.h>
+#include <setjmp.h>
 #include <string.h>
-#include <arpa/inet.h>
+#include <stdint.h>
+#include <bits/pthreadtypes-arch.h>
+#include <bits/pthreadtypes.h>
+#include <pthread.h>
+#include <unistd.h>
 
-void print(void *elem)
+#define COPY(a, b) \
+memcpy((void *)a, (void *)b, sizeof(a)); \
+a;
+pthread_spinlock_t g_spin=0;
+struct a
 {
-    printf("%d\n", *(int *)elem);
-    return;
+    int *b;
+};
+jmp_buf env;
+double divide(double a, double b)
+{
+    if (b == 0)
+    {
+        longjmp(env, 2);
+    }
+    return a / b;
 }
+
+int array[] = {1, 2, 3, 2, 3, 9};
+int arr_len = 6;
 int main()
 {
-    struct acceptor ac;
-    acceptor_init(&ac, AF_INET, SOCK_STREAM, "192.168.31.87", 4321, 10, NULL);
-    while (true)
-    {
-        int cli_fd = accept(ac.listen_socket, (struct sockaddr *)&ac.cli_addr, &ac.len);
-        char buf[10 * 1024];
-        if (cli_fd > 0)
-        {
-            printf("connect cli is %s:%hu\n", inet_ntoa(ac.cli_addr.sin_addr), ntohs(ac.cli_addr.sin_port));
-            while (true)
-            {
-                int ret = read(cli_fd, buf, 10 * 1024);
-                if (ret == 0)
-                {
-                    close(cli_fd);
-                    write(STDOUT_FILENO, "cli closed!\n", 13);
-                    break;
-                }
-                else if (ret == -1)
-                {
-                    close(cli_fd);
-                    write(STDOUT_FILENO, "cli fd bad!\n", 13);
-                    perror("read");
-                    break;
-                }
-                else
-                {
-                    int len = strlen(buf);
-                    write(STDOUT_FILENO, buf, len);
-                    struct http_request_head *req_head = (struct http_request_head *)malloc(sizeof(struct http_request_head));
-                    httpHeadextract(buf, req_head);
-                    struct http_response res;
-                    setResHead(&res.res_head, req_head->version, 200);
-                    setResConnection(&res, "keep-alive");
-                    setResFile(&res, &req_head->file[1]);
-                    sendResPacket(&res, cli_fd);
-                    bzero(buf, len);
-                }
-            }
-        }
-    }
+    // void **array = (void **)malloc(sizeof(void *));
+    // array[0] = (int*)malloc(sizeof(int));
+    // intptr_t p1 = (intptr_t)array;
+    // intptr_t p2 = (intptr_t)array[0];
+    // printf("%ld\t%ld\n", p1,p2);
+    // *((int *)p2) = 3;
+    // printf("%d\n", *((int*)array[0]));
+    // free(array[0]);
+    // free(array);
+    pthread_spin_init(&g_spin,PTHREAD_PROCESS_PRIVATE);
+    pthread_spin_lock(&g_spin);
+    
+    pthread_spin_unlock(&g_spin);
+    pthread_spin_destroy(&g_spin);
+    return 0;
 }

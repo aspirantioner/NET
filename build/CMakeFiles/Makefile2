@@ -83,7 +83,7 @@ CMakeFiles/log_test.dir/all: CMakeFiles/srv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/log_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/log_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 0
 .PHONY : CMakeFiles/log_test.dir/rule
@@ -110,7 +110,7 @@ CMakeFiles/main.dir/all: CMakeFiles/srv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -132,12 +132,12 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/srv.dir/all:
 	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/depend
 	$(MAKE) -f CMakeFiles/srv.dir/build.make CMakeFiles/srv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target srv"
 .PHONY : CMakeFiles/srv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/srv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/srv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljf/data/code/NET_GIT/build/CMakeFiles 0
 .PHONY : CMakeFiles/srv.dir/rule

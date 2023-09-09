@@ -1,4 +1,6 @@
 #include "thread_pool.h"
+#include "cache_pool.h"
+#include "server.h"
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -161,8 +163,8 @@ void *thread_pool_worker(void *q)
         pthread_mutex_unlock(&p->queue_mutex);
 
         work_fun *work = unit->work_fun;
-        work(unit->work_data);
-        free(unit);
+        cache_pool* cache_pool_p = work(unit->work_data);
+        cache_pool_recycle(cache_pool_p, (void *)unit);
 
         /*change state after finish task*/
         pthread_mutex_lock(&p->queue_mutex);

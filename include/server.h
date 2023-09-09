@@ -10,6 +10,7 @@
 #include "array_queue.h"
 #include "dealer.h"
 #include "thread_pool.h"
+#include "cache_pool.h"
 #include <pthread.h>
 #include <netinet/in.h>
 #include <sys/epoll.h>
@@ -31,11 +32,14 @@ typedef struct server
     /*dealer*/
     dealer *de;
 
+    /*cache_pool*/
+    cache_pool *ca;
+
     /*log client*/
     log_client log_cli;
 
 } server;
-void server_init(server *srv, acceptor *ac, epoller *ep, conn_pool *co, dealer *de);
+void server_init(server *srv, acceptor *ac, epoller *ep, conn_pool *co, dealer *de,cache_pool* ca);
 void server_run(struct server *p);
 void server_cmd(struct server *p);
 void exit_handle(int sig);

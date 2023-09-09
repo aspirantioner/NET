@@ -96,9 +96,22 @@ CMakeFiles/srv.dir/src/bitmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srv.dir/src/bitmap.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ljf/data/code/NET_GIT/src/bitmap.c -o CMakeFiles/srv.dir/src/bitmap.c.s
 
+CMakeFiles/srv.dir/src/cache_pool.c.o: CMakeFiles/srv.dir/flags.make
+CMakeFiles/srv.dir/src/cache_pool.c.o: ../src/cache_pool.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/srv.dir/src/cache_pool.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/cache_pool.c.o   -c /home/ljf/data/code/NET_GIT/src/cache_pool.c
+
+CMakeFiles/srv.dir/src/cache_pool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/srv.dir/src/cache_pool.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ljf/data/code/NET_GIT/src/cache_pool.c > CMakeFiles/srv.dir/src/cache_pool.c.i
+
+CMakeFiles/srv.dir/src/cache_pool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/srv.dir/src/cache_pool.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ljf/data/code/NET_GIT/src/cache_pool.c -o CMakeFiles/srv.dir/src/cache_pool.c.s
+
 CMakeFiles/srv.dir/src/conn_pool.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/conn_pool.c.o: ../src/conn_pool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/srv.dir/src/conn_pool.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/srv.dir/src/conn_pool.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/conn_pool.c.o   -c /home/ljf/data/code/NET_GIT/src/conn_pool.c
 
 CMakeFiles/srv.dir/src/conn_pool.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/srv.dir/src/conn_pool.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/dealer.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/dealer.c.o: ../src/dealer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/srv.dir/src/dealer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/srv.dir/src/dealer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/dealer.c.o   -c /home/ljf/data/code/NET_GIT/src/dealer.c
 
 CMakeFiles/srv.dir/src/dealer.c.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/srv.dir/src/dealer.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/epoller.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/epoller.c.o: ../src/epoller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/srv.dir/src/epoller.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/srv.dir/src/epoller.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/epoller.c.o   -c /home/ljf/data/code/NET_GIT/src/epoller.c
 
 CMakeFiles/srv.dir/src/epoller.c.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/srv.dir/src/epoller.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/filefd.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/filefd.c.o: ../src/filefd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/srv.dir/src/filefd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/srv.dir/src/filefd.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/filefd.c.o   -c /home/ljf/data/code/NET_GIT/src/filefd.c
 
 CMakeFiles/srv.dir/src/filefd.c.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/srv.dir/src/filefd.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/lio_thread.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/lio_thread.c.o: ../src/lio_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/srv.dir/src/lio_thread.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/srv.dir/src/lio_thread.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/lio_thread.c.o   -c /home/ljf/data/code/NET_GIT/src/lio_thread.c
 
 CMakeFiles/srv.dir/src/lio_thread.c.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/srv.dir/src/lio_thread.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/log.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/log.c.o: ../src/log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/srv.dir/src/log.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/srv.dir/src/log.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/log.c.o   -c /home/ljf/data/code/NET_GIT/src/log.c
 
 CMakeFiles/srv.dir/src/log.c.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/srv.dir/src/log.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/logclient.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/logclient.c.o: ../src/logclient.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/srv.dir/src/logclient.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/srv.dir/src/logclient.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/logclient.c.o   -c /home/ljf/data/code/NET_GIT/src/logclient.c
 
 CMakeFiles/srv.dir/src/logclient.c.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/srv.dir/src/logclient.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/logserver.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/logserver.c.o: ../src/logserver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/srv.dir/src/logserver.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/srv.dir/src/logserver.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/logserver.c.o   -c /home/ljf/data/code/NET_GIT/src/logserver.c
 
 CMakeFiles/srv.dir/src/logserver.c.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/srv.dir/src/logserver.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/server.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/server.c.o: ../src/server.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/srv.dir/src/server.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/srv.dir/src/server.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/server.c.o   -c /home/ljf/data/code/NET_GIT/src/server.c
 
 CMakeFiles/srv.dir/src/server.c.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/srv.dir/src/server.c.s: cmake_force
 
 CMakeFiles/srv.dir/src/thread_pool.c.o: CMakeFiles/srv.dir/flags.make
 CMakeFiles/srv.dir/src/thread_pool.c.o: ../src/thread_pool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/srv.dir/src/thread_pool.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/srv.dir/src/thread_pool.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/srv.dir/src/thread_pool.c.o   -c /home/ljf/data/code/NET_GIT/src/thread_pool.c
 
 CMakeFiles/srv.dir/src/thread_pool.c.i: cmake_force
@@ -231,6 +244,7 @@ srv_OBJECTS = \
 "CMakeFiles/srv.dir/src/acceptor.c.o" \
 "CMakeFiles/srv.dir/src/array_queue.c.o" \
 "CMakeFiles/srv.dir/src/bitmap.c.o" \
+"CMakeFiles/srv.dir/src/cache_pool.c.o" \
 "CMakeFiles/srv.dir/src/conn_pool.c.o" \
 "CMakeFiles/srv.dir/src/dealer.c.o" \
 "CMakeFiles/srv.dir/src/epoller.c.o" \
@@ -248,6 +262,7 @@ srv_EXTERNAL_OBJECTS =
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/acceptor.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/array_queue.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/bitmap.c.o
+../lib/libsrv.so: CMakeFiles/srv.dir/src/cache_pool.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/conn_pool.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/dealer.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/epoller.c.o
@@ -260,7 +275,7 @@ srv_EXTERNAL_OBJECTS =
 ../lib/libsrv.so: CMakeFiles/srv.dir/src/thread_pool.c.o
 ../lib/libsrv.so: CMakeFiles/srv.dir/build.make
 ../lib/libsrv.so: CMakeFiles/srv.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library ../lib/libsrv.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ljf/data/code/NET_GIT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C shared library ../lib/libsrv.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srv.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

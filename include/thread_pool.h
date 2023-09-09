@@ -11,7 +11,7 @@
 
 typedef void *(thread_fun)(void *);
 typedef void(send_fun)(void *);
-typedef void(work_fun)(void *);
+typedef void *(work_fun)(void *);
 
 typedef enum
 {

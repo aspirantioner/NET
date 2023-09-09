@@ -4,6 +4,7 @@
 #include <arpa/inet.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <unistd.h>
 
 #define IP_LEN 30
 
@@ -19,7 +20,7 @@ typedef struct conn_pool
 {
     struct conn *conn_arry;
     int conn_num;
-    pthread_mutex_t conn_mutex;
+    pthread_spinlock_t conn_spin;
 } conn_pool;
 
 void conn_pool_init(conn_pool *p);
