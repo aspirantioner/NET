@@ -24,6 +24,7 @@ typedef struct cache_pool
     cache_queue cache_restore_queue;
     cache_queue cache_recycle_queue;
     pthread_spinlock_t cache_restore_queue_lock;
+    pthread_spinlock_t cache_recycle_queue_lock;
 } cache_pool;
 
 void cache_pool_init(struct cache_pool *cache_pool_p, int cache_elem_size, int cache_elem_sum, int cache_elem_recycle_size);

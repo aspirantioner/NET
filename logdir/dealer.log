@@ -1,1536 +1,346 @@
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57168 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55830 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57170 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55842 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57178 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55844 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57194 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55830 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55858 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57196 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57200 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57214 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57224 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57226 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57240 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57250 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57256 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57262 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57278 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57288 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57300 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57310 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57316 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57322 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57326 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57338 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57350 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57354 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57366 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57372 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57380 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57386 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57402 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57406 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57408 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57388 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57420 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57424 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57196 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57170 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57194 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57178 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57446 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57452 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57460 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57438 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57470 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57476 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57168 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57256 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57250 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57240 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57226 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57200 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57262 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57224 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57278 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57496 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57496 data has read over!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57488 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57476 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57494 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57494 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57508 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57508 data has read over!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57512 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57214 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57512 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57524 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57526 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57526 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57316 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57288 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57310 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57322 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57388 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57366 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57386 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57402 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57380 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57372 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57326 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57350 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57354 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57406 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57338 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57300 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57424 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57408 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57420 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57460 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57452 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57446 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57438 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57540 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57470 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57476 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57488 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57496 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57508 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57546 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57562 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57574 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57588 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57524 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57584 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57598 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57562 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57574 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57546 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57588 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57540 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57562 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57598 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57584 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57600 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57598 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57600 data has read over!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57610 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57624 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57630 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57640 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57654 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57670 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57682 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57690 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57698 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57702 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57716 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57722 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57728 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57736 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57740 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57756 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57758 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57760 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57768 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57776 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57788 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57796 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57808 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57824 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57600 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57610 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57848 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57834 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57848 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57854 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57850 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57850 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57862 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57848 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57850 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57834 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57854 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57876 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57888 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57896 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57862 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57876 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57902 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57896 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57902 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57924 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57888 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57902 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57918 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57918 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57924 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57936 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57952 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57936 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:57952 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57960 data has read over!
-server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57952 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57936 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57960 data has read over!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57966 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57960 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57624 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57640 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57630 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57654 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57670 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57682 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57690 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:57978 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57698 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57716 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:57990 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57702 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57722 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57728 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57740 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57966 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57756 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57736 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57758 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:58006 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:58014 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57978 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57990 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:58026 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:58030 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:58014 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57760 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57768 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:57788 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:57776 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57808 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57824 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57796 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:57526 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:58006 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:58030 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:58026 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:58046 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:58046 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42036 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42038 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42054 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42058 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42070 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42078 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42080 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42090 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42094 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42108 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42120 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42124 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42138 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42140 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42146 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42150 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42152 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42166 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42178 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42194 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42210 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42214 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42216 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42220 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42228 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42242 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42254 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42262 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42274 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42278 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42292 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42300 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42316 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42330 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42338 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42350 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42354 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42364 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42380 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42382 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42394 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42406 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42408 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42414 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42424 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42438 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42444 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42450 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42458 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42466 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42478 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42494 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42508 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42520 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42534 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42544 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42560 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42568 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42580 data has read over!
-server test1!
-server test2!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55858 data has read over!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42588 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55842 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:55844 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553716532992 client 192.168.80.129:55886 data has read over!
 server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42602 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42616 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42628 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42638 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42406 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42458 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42652 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42466 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42494 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42508 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42478 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42520 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42534 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42544 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42094 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42560 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42214 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42568 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42216 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42220 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42228 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42242 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42254 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42262 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42274 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42278 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42292 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42300 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42316 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42330 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42338 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42354 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42350 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42364 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42408 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42414 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42424 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42438 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42444 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42450 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42380 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42382 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42394 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42036 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42038 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42054 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42058 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42070 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42668 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42674 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42078 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42080 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42090 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42108 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42120 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42124 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42138 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42140 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42146 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42150 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42580 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42616 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42652 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42698 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42712 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42726 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42742 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42698 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42712 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42758 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42726 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42770 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42778 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42742 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42810 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42794 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42758 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42778 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42814 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42820 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42794 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42824 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42840 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42848 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42864 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42880 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42890 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42906 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42908 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42922 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42932 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42936 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42950 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42954 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42956 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42970 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42972 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:42978 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42982 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:42998 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:43004 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:43020 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42178 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42194 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42166 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42210 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42152 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42820 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42824 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42814 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42840 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42848 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42864 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42880 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42890 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42906 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42908 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42922 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42932 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42936 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42950 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42954 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42956 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42970 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42972 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42978 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42982 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42998 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:43004 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42588 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42602 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42638 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42628 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:42770 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42810 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:43020 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:42684 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42674 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:42668 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:42684 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36564 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36578 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36586 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36588 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36600 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36608 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36616 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36626 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36634 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36638 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36650 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36662 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36670 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36682 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36690 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36700 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36714 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36720 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36722 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36734 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36748 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36762 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36764 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36766 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36774 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36784 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36794 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36810 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36812 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36822 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36830 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36832 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36846 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36862 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36866 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36876 data has read over!
-server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36878 data has read over!
-server test1!
-server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36880 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55874 data has read over!
 server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36894 data has read over!
-server test1!
-server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:36900 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55878 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36906 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55858 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55880 data has read over!
 server test1!
-server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36908 data has read over!
-server test1!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55880 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36918 data has read over!
-server test1!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55886 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:36934 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55892 data has read over!
 server test1!
-server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36578 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36638 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36670 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36588 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36650 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36950 data has read over!
-server test1!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553716532992 client 192.168.80.129:55874 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36958 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55902 data has read over!
 server test1!
-server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36964 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55904 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36980 data has read over!
-server test1!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55902 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36982 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55918 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36988 data has read over!
-server test1!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:55892 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:36990 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55886 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55880 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55928 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37004 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55902 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55928 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55972 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37014 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55974 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37028 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55918 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55982 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37034 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55972 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55974 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56004 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37038 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55990 data has read over!
 server test1!
-server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37044 data has read over!
-server test1!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55982 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:55990 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37058 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:55990 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56004 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56362 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37060 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56374 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37070 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56382 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37076 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56402 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37082 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56410 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37092 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56418 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37096 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56426 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37098 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56440 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37100 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56446 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37114 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56460 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37116 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56386 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37122 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56476 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37132 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56486 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37148 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56492 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37158 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56474 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37168 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56510 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37182 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56520 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37190 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56526 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37192 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56508 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37196 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56540 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37212 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56544 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37222 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56546 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37224 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56574 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37232 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56558 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37246 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56586 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37252 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56602 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37262 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56614 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36626 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36608 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36586 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36634 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36616 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36564 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36600 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36810 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36662 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36700 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36832 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36682 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36690 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36714 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36794 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37270 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56628 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37282 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56630 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36720 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36762 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36748 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36734 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36764 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36722 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37294 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56636 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37298 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56640 data has read over!
 server test1!
 server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36766 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36774 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36784 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37262 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37282 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37270 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37328 data has read over!
-server test1!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37334 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56646 data has read over!
 server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36812 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37338 data has read over!
-server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36934 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37352 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56012 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56022 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56034 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56054 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56094 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56028 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56126 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56122 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56108 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56066 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56138 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56050 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56132 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56156 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56142 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56160 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56170 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56172 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56186 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56198 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56206 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56200 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56212 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553733318400 client 192.168.80.129:56078 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56230 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56238 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56440 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56426 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56374 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56362 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56410 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56476 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56296 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56460 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56334 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56418 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56328 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56266 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56710 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36830 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36822 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37304 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56312 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56280 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56252 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56346 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56274 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56474 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56386 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56446 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56402 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56382 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56486 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56492 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56508 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56510 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56520 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56526 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56540 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56546 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56544 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56558 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56602 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56586 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56574 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56614 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56628 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56630 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56636 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:55944 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56640 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:55958 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56646 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56656 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56682 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56672 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553733318400 client 192.168.80.129:56720 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37304 data has read over!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37356 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56694 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37362 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56722 data has read over!
 server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37334 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37372 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56732 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37384 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56742 data has read over!
 server test1!
-server test2!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37328 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37312 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56748 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37312 data has read over!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36950 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36958 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36964 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36980 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37298 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299823318784 client 192.168.80.129:37396 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56756 data has read over!
 server test1!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299814926080 client 192.168.80.129:37406 data has read over!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140553724925696 client 192.168.80.129:56762 data has read over!
 server test1!
-
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 34 dealer_run [INFO] 140299806533376 client 192.168.80.129:37406 data has read over!
 server test2!
 
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37294 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36982 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36988 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36990 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37004 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37014 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37028 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37034 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37038 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37044 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37058 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37060 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37070 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37076 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37082 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37092 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37096 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37098 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37100 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37114 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37116 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37132 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37122 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37148 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37158 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37168 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37182 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37190 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37192 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37196 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37212 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37222 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37246 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37224 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37232 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37252 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36876 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36846 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36862 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36878 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36866 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36880 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:36906 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36900 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:36894 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36908 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:36918 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37334 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37338 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37328 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37352 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37356 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37362 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37372 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37384 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37396 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299806533376 client 192.168.80.129:37406 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299823318784 client 192.168.80.129:37304 has close connect with server!
-Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140299814926080 client 192.168.80.129:37312 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56224 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56710 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56732 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56722 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56742 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56748 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56762 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56756 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553716532992 client 192.168.80.129:56720 has close connect with server!
+Sep  4 2023 21:45:58 /home/ljf/data/code/NET_GIT/src/dealer.c 68 dealer_run [INFO] 140553724925696 client 192.168.80.129:56694 has close connect with server!
