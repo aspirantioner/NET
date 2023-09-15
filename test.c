@@ -1,32 +1,31 @@
-// #include "cache_pool.h"
+#include "../lio_thread.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdint.h>
-#include "cache_pool.h"
-
-void *thread_func(void *p)
+#include <unistd.h>
+void *thread_func(void *arg)
 {
-    cache_pool *pool_p = p;
-    for (int i = 0; i < 100; i++)
+    lio_thread *lio_thread_p = ((void **)arg)[0];
+    printf("thread %ld is  running!\n", lio_thread_p->thread_id);
+    while (1)
     {
-        void *ptr = cache_pool_alloc(pool_p);
-        *(int *)ptr = i;
-        printf("%d:%p\n", *(int *)ptr, ptr);
-        cache_pool_recycle(ptr);
+        sleep(5);
+        if (lio_thread_p->state == LIO_THREAD_QUIT)
+        {
+            return NULL;
+        }
     }
-    return NULL;
 }
 
 int main(int argc, char **argv)
 {
-    cache_pool pool;
-    cache_pool_init(&pool, sizeof(int), 10, 10);
-    pthread_t array[2];
-    pthread_create(&array[0], NULL, thread_func, &pool);
-    pthread_create(&array[1], NULL, thread_func, &pool);
-    pthread_join(array[0], NULL);
-    pthread_join(array[1], NULL);
-    cache_pool_destroy(&pool);
-    return 0;
+    lio_thread li;
+    lio_thread_init(&li, thread_func, NULL);
+    lio_thread_run(&li);
+    sleep(2);
+    lio_thread_stop(&li);
+    sleep(1);
+    lio_thread_cont(&li);
+    sleep(2);
+    lio_thread_exit(&li);
+    pthread_join(li.thread_id, NULL);
+    return 1;
 }

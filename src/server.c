@@ -11,14 +11,6 @@
 #include <assert.h>
 
 /*
-thread receive exit signal and exit
- */
-void exit_handle(int sig)
-{
-	pthread_exit(NULL);
-}
-
-/*
 init server system
 bind ac,ep,co,de,lo and set server log,exit sig
 */

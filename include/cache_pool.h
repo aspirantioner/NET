@@ -5,9 +5,6 @@
 #include <unistd.h>
 #include <stdint.h>
 
-#define GET_NEXT(p) (p = (void *)p; (void *)(*(intptr_t *)(p - 2 * sizeof(intptr_t)));)
-#define GET_POOL(P) (p = (void *)p; (void *)(*(intptr_t *)(p - sizeof(intptr_t)));)
-
 typedef struct cache_queue
 {
     intptr_t cache_queue_head;

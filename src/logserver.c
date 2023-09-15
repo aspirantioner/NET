@@ -154,6 +154,9 @@ void log_server_exit(struct log_server *log_server_p)
     /*destroy thread pool*/
     thread_pool_destory(log_server_p->log_thread_pool_p);
 
+    /*destroy cache pool*/
+    cache_pool_destroy(log_server_p->cache_pool_p);
+
     /*close all open file fd*/
     for (int i = 0; i < log_server_p->bitmap_p->bitmap_len; i++)
     {
@@ -162,5 +165,9 @@ void log_server_exit(struct log_server *log_server_p)
             close(i);
         }
     }
+
+    /*destroy bitmap*/
+    bitmap_destory(log_server_p->bitmap_p);
+    
     write(STDOUT_FILENO, "log exit!\n", 11);
 }
