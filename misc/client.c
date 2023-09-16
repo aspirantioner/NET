@@ -27,14 +27,15 @@ void *thread_fun(void *p)
     address.sin_port = htons(1234);
     len = sizeof(address);
     result = connect(client_sockfd, (struct sockaddr *)&address, len);
-    
+
     if (result == -1)
     {
         perror("oops: client2");
         exit(1);
     }
     int flag = 1;
-    if(setsockopt(client_sockfd, IPPROTO_TCP, TCP_NODELAY, &flag, sizeof(int))==-1){
+    if (setsockopt(client_sockfd, IPPROTO_TCP, TCP_NODELAY, &flag, sizeof(int)) == -1)
+    {
         perror("delay error");
     };
     // 第一次读写
@@ -58,8 +59,8 @@ void *thread_fun(void *p)
 
 int main()
 {
-    pthread_t thread_arry[100];
-    for (int i = 0; i < 100; i++)
+    pthread_t thread_arry[2000];
+    for (int i = 0; i < 2000; i++)
     {
         pthread_create(&thread_arry[i], NULL, thread_fun, NULL);
         pthread_detach(thread_arry[i]);

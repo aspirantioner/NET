@@ -30,7 +30,6 @@ void *log_server_receive(void *p)
     struct lio_thread *lio_thread_p = args[0];
     struct log_server *log_server_p = args[1];
 
-
     int addr_len = sizeof(struct sockaddr); // get client ip and port info
 
     sigset_t sigset;
@@ -45,10 +44,10 @@ void *log_server_receive(void *p)
         {
             return NULL;
         }
-        struct log_client_set *log_client_set_p = cache_pool_alloc(log_server_p->cache_pool_p);
+        work_unit *unit_p = cache_pool_alloc(log_server_p->cache_pool_p);
+        struct log_client_set *log_client_set_p = (log_client_set *)((void *)unit_p + sizeof(work_unit));
         log_client_set_p->log_server_p = log_server_p;
         int ret = recvfrom(log_server_p->log_socket, &log_client_set_p->log_pkt, sizeof(struct log_packet), 0, (struct sockaddr *)&(log_client_set_p->client_addr), &addr_len);
-
         if (lio_thread_p->state == THREAD_QUIT)
         {
             return NULL;
@@ -60,7 +59,6 @@ void *log_server_receive(void *p)
         }
         sigprocmask(SIG_BLOCK, &sigset, NULL);
 
-        work_unit *unit_p = cache_pool_alloc(log_server_p->cache_pool_p);
         unit_p->work_data = log_client_set_p;
         unit_p->work_fun = log_deal;
         send_work_func(log_server_p->log_thread_pool_p, unit_p);
@@ -137,7 +135,6 @@ void *log_deal(void *p)
             }
         }
     }
-
     return NULL;
 }
 
@@ -147,7 +144,7 @@ void log_server_exit(struct log_server *log_server_p)
     /*exit receive log thread*/
     lio_thread_exit(&log_server_p->thread);
     pthread_join(log_server_p->thread.thread_id, NULL);
-
+    printf("log server thread has exit!\n");
     /*close log  receive socket*/
     close(log_server_p->log_socket);
 
@@ -168,6 +165,6 @@ void log_server_exit(struct log_server *log_server_p)
 
     /*destroy bitmap*/
     bitmap_destory(log_server_p->bitmap_p);
-    
+
     write(STDOUT_FILENO, "log exit!\n", 11);
 }

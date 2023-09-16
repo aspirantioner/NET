@@ -64,6 +64,7 @@ void *cache_pool_alloc(struct cache_pool *cache_pool_p)
             pthread_spin_unlock(&cache_pool_p->cache_restore_queue_lock);
             break;
         }
+        printf("num is %d\n",cache_queue_p->cache_elem_num);
         pthread_spin_unlock(&cache_pool_p->cache_restore_queue_lock);
     }
     return elem_p;

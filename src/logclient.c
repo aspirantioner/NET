@@ -13,7 +13,7 @@ void log_client_init(struct log_client *log_client_p, const char *server_ip, in_
     /*connect log_server*/
     if (connect(log_client_p->log_socket, (struct sockaddr *)&log_client_p->log_server_addr, sizeof(struct sockaddr)) == -1)
     {
-        perror("connect");
+        perror("connect log server failed!");
     };
 
     log_client_p->log_pkt.log_append.appendfd = 0; // judge if open file fd
@@ -24,7 +24,11 @@ bool log_client_open_file(struct log_client *log_client_p, char *file_name, int 
     logAppendInit(&log_client_p->log_pkt.log_append, file_name, open_mode);
     int addr_len = sizeof(struct sockaddr);
     write(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet));
-    read(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet));
+    int ret = read(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet));
+    if (ret == -1)
+    {
+        perror("log file open failed!");
+    }
     return log_client_p->log_pkt.log_append.appendfd > 0 ? true : false;
 }
 
@@ -34,6 +38,7 @@ void log_client_write(struct log_client *log_client_p)
     if (write(log_client_p->log_socket, &log_client_p->log_pkt, sizeof(struct log_packet)) == -1)
     {
         perror("udp write");
+        log_client_p->log_pkt.log_append.appendfd = 0;//close log file if send failed
     }
 }
 

@@ -42,6 +42,5 @@ typedef struct server
 void server_init(server *srv, acceptor *ac, epoller *ep, conn_pool *co, dealer *de,cache_pool* ca);
 void server_run(struct server *p);
 void server_cmd(struct server *p);
-void exit_handle(int sig);
 void server_destroy(struct server *p);
 #endif
